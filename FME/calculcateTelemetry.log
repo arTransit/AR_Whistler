@@ -1,0 +1,103 @@
+2013-02-21 11:57:13|   0.1|  0.1|INFORM|Feature Manipulation Engine 2012 SP2 (20120417 - Build 12238 - WIN64)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME ESRI Edition (node locked-crc)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Serial Number: SAF000971
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Permanent License.
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Machine host name is: VTCW0105
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|START - ProcessID: 10788, peak process memory usage: 31568 kB, current process memory usage: 31488 kB
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:\AndrewRoss\Work\AR_Whistler\FME\wb-xlate-1361476632701_9580' `LOG_STANDARDOUT' `YES' `LogCount' `C:\Users\aross\AppData\Local\Temp\wb-xlate-counts-1361476632707_9580'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shared directories for formats are : C:\Program Files\FME\datasources;G:\BusinessIntelligence\Data\Resource\FME\Formats;C:\AndrewRoss\FME\Formats
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shared directories for transformers are : F:\My Documents\FME\Transformers;C:\Program Files\FME\transformers;G:\BusinessIntelligence\Data\Resource\FME\Transformers;C:\AndrewRoss\FME\Transformers;C:\Users\aross\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shared directories for coordinate systems are : G:\BusinessIntelligence\Data\Resource\FME\CoordinateSystems;C:\AndrewRoss\FME\CoordinateSystems
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shared directories for coordinate system exceptions are : G:\BusinessIntelligence\Data\Resource\FME\CoordinateSystemExceptions;C:\AndrewRoss\FME\CoordinateSystemExceptions
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shared directories for transformer categories are : G:\BusinessIntelligence\Data\Resource\FME\TransformerCategories;C:\AndrewRoss\FME\TransformerCategories
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `SHAPE_1'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `SHAPE_2'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `SHAPE_2_DEF'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Reader type is `SHAPE'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer type is `SHAPE'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Geometry Handling Mode is `Enhanced' 
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Current working directory is `C:\AndrewRoss\Work\AR_Whistler\FME'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Temporary directory is `C:\Users\aross\AppData\Local\Temp'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\AndrewRoss\Work\AR_Whistler\FME/'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'calculcateTelemetry.fmw'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2012 SP2'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|System Status: 83944MB of disk space available in the FME temporary directory (C:\Users\aross\AppData\Local\Temp\)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|System Status: 8388429MB of virtual memory available
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Operating System: Microsoft Windows 7 x64 Service Pack 1 (Build 7601)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Platform: WIN64
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Locale: en_CA
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Code Page: 1252  (ANSI - Latin I)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Process limit is 8150 MB (out of 8150 MB physical memory and 8388607 MB address space)
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 4890 MB of memory or 8388007 MB of address space
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 3667 MB of memory and 6291005 MB of address space
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Using Shape Reader $Revision: 87058 $ ( $Date: 2012-03-06 13:27:58 -0800 (Tue, 06 Mar 2012) $ ) to read shape files from directory `C:\AndrewRoss\Work\AR_Whistler\Data/'
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|SHAPE_1 Reader: Using enhanced geometry
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Shape Reader: Allowing attribute names with mixed case
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Opened Shape File C:\AndrewRoss\Work\AR_Whistler\Data\gfi_utm10.shp for input
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|Opened DBF File 'C:\AndrewRoss\Work\AR_Whistler\Data\gfi_utm10.dbf' for input
+2013-02-21 11:57:13|   0.1|  0.0|INFORM|DBF File 'C:\AndrewRoss\Work\AR_Whistler\Data\gfi_utm10.dbf' has fields: BUS number(20,10), ROUTE number(20,10), TIMESTAMP number(20,10), DATE char(20), TIME char(20), BUSDAY number(20,10), SEQTR number(20,10), POINTCALC logical, SEQ number(20,10), N logical, TYPE number(20,10), SEQPPD number(20,10), TS char(20), LOC_N number(20,10), DES number(20,10), AMT number(20,10), ID number(20,10), SEQMISC number(20,10)
+2013-02-21 11:57:13|   0.3|  0.2|INFORM|The OGC definition of the FME coordinate system 'UTM83-10' is 'PROJCS["NAD_1983_UTM_Zone_10N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",0],PARAMETER["Central_Meridian",-123],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]'
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|FME Configuration: Source coordinate system for reader SHAPE_1[SHAPE] set to `UTM83-10' as read from input data
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Coordinate System `UTM83-10' parameters: CS_NAME=`UTM83-10' DESC_NM=`UTM with NAD83 datum, Zone 10, Meter; Central Meridian 123d W' DT_NAME=`NAD83' EPSG=`26910' ESRI_WKT=`PROJCS["NAD_1983_UTM_Zone_10N",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",0],PARAMETER["Central_Meridian",-123],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]' GROUP=`UTM83' MAP_SCL=`1' PARM1=`-123' PROJ=`TM' QUAD=`1' SCL_RED=`0.9996' SOURCE=`Snyder, J.P, 1987, Map Projections - A Working Manual' UNIT=`METER' X_OFF=`500000.0' Y_OFF=`0.0' 
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Coordinate System `UTM83-10' as OGC Well Known Text: PROJCS["UTM with NAD83 datum, Zone 10, Meter; Central Meridian 123d W",GEOGCS["NAD83",DATUM["North_American_Datum_1983",SPHEROID["Geodetic Reference System of 1980",6378137,298.2572221009113,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4269"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-123],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["METER",1],AUTHORITY["EPSG","26910"]]
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Using Shape Writer $Revision: 78962 $ ( $Date: 2011-05-04 16:50:26 -0700 (Wed, 04 May 2011) $ ) to write shape files to directory `C:\AndrewRoss\Work\AR_Whistler\Data'
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Shape Writer: Enabling Strict compatibility
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20111219)
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (3.7 20111219)
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Using FME's provided Python interpreter from C:\Program Files\FME\fmepython27\python27.dll
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Python version 2.7 successfully loaded
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Adding directory `C:\AndrewRoss\Work\AR_Whistler\FME\' to the python path
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Shape Reader: Bounding box of shapefile `C:\AndrewRoss\Work\AR_Whistler\Data\GFI_UTM10' is: (496811.40170886,5547190.21626346),(514291.122215364,5574394.36871945)
+2013-02-21 11:57:13|   0.3|  0.0|INFORM|Shape Reader: Bounding box of shapefile(s) selected from directory `C:\AndrewRoss\Work\AR_Whistler\Data/' is: (496811.40170886,5547190.21626346),(514291.122215364,5574394.36871945)
+2013-02-21 11:57:13|   0.4|  0.1|INFORM|Reading source feature # 2500
+2013-02-21 11:57:13|   0.5|  0.1|INFORM|Reading source feature # 5000
+2013-02-21 11:57:13|   0.6|  0.1|INFORM|Reading source feature # 7500
+2013-02-21 11:57:13|   0.7|  0.1|INFORM|Reading source feature # 10000
+2013-02-21 11:57:14|   0.7|  0.1|INFORM|Reading source feature # 12500
+2013-02-21 11:57:14|   0.8|  0.1|INFORM|Reading source feature # 15000
+2013-02-21 11:57:14|   0.9|  0.1|INFORM|Reading source feature # 17500
+2013-02-21 11:57:14|   1.0|  0.1|INFORM|Emptying factory pipeline
+2013-02-21 11:57:14|   1.0|  0.0|STATS |Unexpected Input Remover(TestFactory): Tested 19634 input feature(s) -- 19634 feature(s) passed and 0 feature(s) failed
+2013-02-21 11:57:14|   1.0|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2013-02-21 11:57:14|   1.0|  0.0|STATS |Source -> Generic(TeeFactory): Cloned 19634 input feature(s) into 19634 output feature(s)
+2013-02-21 11:57:14|   1.0|  0.0|STATS |gfi_utm10 Feature Counter -1 6(TeeFactory): Cloned 19634 input feature(s) into 19634 output feature(s)
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|Sorter(SortFactory): Starting sorting 19634 feature(s)
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|Sorter(SortFactory): Done sorting 19634 feature(s)
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|Shape Writer: Writing shape file using character encoding `ANSI'
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|Opened Shape File C:\AndrewRoss\Work\AR_Whistler\Data\gfi_telemetry.shp for output
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|Opened DBF file 'C:\AndrewRoss\Work\AR_Whistler\Data\gfi_telemetry.dbf' for output
+2013-02-21 11:57:14|   1.0|  0.0|INFORM|DBF Writer: Writing DBF file using character encoding `ANSI'
+2013-02-21 11:57:14|   1.4|  0.4|INFORM|Sorter(SortFactory): Completed 20.37% of intermediate processing
+2013-02-21 11:57:15|   1.9|  0.5|INFORM|Sorter(SortFactory): Completed 45.84% of intermediate processing
+2013-02-21 11:57:15|   2.3|  0.5|INFORM|Sorter(SortFactory): Completed 71.3% of intermediate processing
+2013-02-21 11:57:16|   2.8|  0.5|INFORM|Sorter(SortFactory): Completed 96.77% of intermediate processing
+2013-02-21 11:57:16|   2.9|  0.1|STATS |Sorter(SortFactory): Sorted 19634 feature(s)
+2013-02-21 11:57:16|   2.9|  0.0|STATS |Sorter_SORTED Feature Counter -1 7(TeeFactory): Cloned 19634 input feature(s) into 19634 output feature(s)
+2013-02-21 11:57:16|   2.9|  0.0|STATS |PythonCaller_OUTPUT Feature Counter -1 9(TeeFactory): Cloned 19634 input feature(s) into 19634 output feature(s)
+2013-02-21 11:57:16|   2.9|  0.0|STATS |PythonCaller_OUTPUT -> gfi_telemetry Correlator(TeeFactory): Cloned 19634 input feature(s) into 19634 output feature(s)
+2013-02-21 11:57:16|   2.9|  0.0|STATS |Final Output Feature Type Router(TestFactory): Tested 19634 input feature(s) -- 19634 feature(s) passed and 0 feature(s) failed
+2013-02-21 11:57:16|   2.9|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|STATS |                            Features Read Summary
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|STATS |gfi_utm10                                                                19634
+2013-02-21 11:57:16|   2.9|  0.0|STATS |==============================================================================
+2013-02-21 11:57:16|   2.9|  0.0|STATS |Total Features Read                                                      19634
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|STATS |                           Features Written Summary
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|STATS |gfi_telemetry (gfi_telemetry)                                            19634
+2013-02-21 11:57:16|   2.9|  0.0|STATS |==============================================================================
+2013-02-21 11:57:16|   2.9|  0.0|STATS |Total Features Written                                                   19634
+2013-02-21 11:57:16|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-21 11:57:16|   2.9|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (19634 feature(s) output)
+2013-02-21 11:57:16|   2.9|  0.0|INFORM|FME Session Duration: 3.1 seconds. (CPU: 2.5s user, 0.3s system)
+2013-02-21 11:57:16|   2.9|  0.0|INFORM|END - ProcessID: 10788, peak process memory usage: 103052 kB, current process memory usage: 76936 kB

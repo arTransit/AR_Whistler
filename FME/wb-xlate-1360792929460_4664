@@ -1,0 +1,1459 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Windows command-line to run this workspace:
+#    
+#    
+#    fme.exe wb-xlate-1360792929460_4664
+#          --DestDataset_CSV C:\AndrewRoss\Work\AR_Whistler\Data\test.txt
+#          --SourceDataset_SQLITE3 C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db
+#          --DestDataset_CSV_5 C:\AndrewRoss\Work\AR_Whistler\Data
+#          --DestDataset_CSV_4 C:\AndrewRoss\Work\AR_Whistler\Data
+#    
+#    
+#! LAST_SAVE_BUILD="FME(R) 2012 SP2 (20120417 - Build 12238 - WIN64)"
+#! MAX_LOG_FEATURES="200"
+#! SOURCE="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! END_TCL=""
+#! DESTINATION="NONE"
+#! SHOW_BOOKMARKS="true"
+#! GRID_VISIBLE="false"
+#! SHOW_ANNOTATIONS="true"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! END_PYTHON=""
+#! CATEGORY=""
+#! REQUIREMENTS_KEYWORD=""
+#! GRID_HEIGHT="50"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_BUILD_NUM="12238"
+#! SHOW_INFO_NODES="true"
+#! BEGIN_PYTHON=""
+#! DESCRIPTION=""
+#! GRID_SNAPTO="false"
+#! GRID_WIDTH="50"
+#! BEGIN_TCL=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! LOG_FILE=""
+#! HISTORY=""
+#! VIEW_POSITION="0 0"
+#! SOURCE_ROUTING_FILE=""
+#! ZOOM_SCALE="100"
+#! PASSWORD=""
+#! VIEW_PAGE_BREAKS="false"
+#! WORKSPACE_VERSION="1"
+#! DESTINATION_ROUTING_FILE=""
+#! LAST_SAVE_DATE="2013-02-13T14:02:09"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! TITLE=""
+#! USAGE=""
+#! IGNORE_READER_FAILURE="No"
+#! REQUIREMENTS=""
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! REDIRECT_TERMINATORS="NONE"
+#! ATTR_TYPE_ENCODING="SDF"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="SQLITE3"
+#! DATASET="$(SourceDataset_SQLITE3)"
+#! KEYWORD="SQLITE3_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="sqlite3_sql_statement &quot;&quot; sqlite3_where_clause &quot;&quot;"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type varchar(50) fme_text_string varchar(50) multi_reader_full_id integer fme_feature_type varchar(50) fme_basename varchar(50) multi_reader_type varchar(50) fme_geometry fme_char(50) multi_reader_keyword varchar(50) fme_sweep_angle float fme_rotation float fme_secondary_axis float fme_fill_color varchar(50) fme_dataset varchar(50) fme_primary_axis float fme_start_angle float fme_text_size float fme_color varchar(50) multi_reader_id integer db_type varchar(254)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL TEXT sqlite3_where_clause  WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT sqlite3_sql_statement     SELECT Statement&quot; &quot;&quot; "
+#! ATTR_INDEX_TYPES="indexed unique"
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! MIN_FEATURES=""
+#! START_FEATURE=""
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="ALLOW_DATASET_CONFLICT"
+#! VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="CSV"
+#! DATASET="$(DestDataset_CSV)"
+#! KEYWORD="CSV_1"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="32"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_text_string char(50) fme_feature_type char(50) fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to file&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="CSV"
+#! DATASET="$(DestDataset_CSV_5)"
+#! KEYWORD="CSV_2"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="32"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_text_string char(50) fme_feature_type char(50) fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to file&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="CSV"
+#! DATASET="$(DestDataset_CSV_4)"
+#! KEYWORD="CSV_3"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="32"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="csv_append_mode INHERIT_FROM_WRITER csv_field_names INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_text_string char(50) fme_feature_type char(50) fme_basename char(50) fme_geometry fme_char(50) fme_sweep_angle number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL CHOICE csv_append_mode INHERIT_FROM_WRITER%yes%no Append to file&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL CHOICE csv_field_names INHERIT_FROM_WRITER%yes%no Output Field Names&quot; INHERIT_FROM_WRITER "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int16"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="blob"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_date"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_time"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="varchar(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="varchar(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="real(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(31,15)"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(15,7)"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="GFI"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="18"
+#! FEAT_GEOMTYPE="db_none"
+#! POSITION="137 -725"
+#! ORDER="11"
+#! COLLAPSED="true"
+#! KEYWORD="SQLITE3_1"
+#! ENABLED="false"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="LOC_N" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQTR" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQPPD" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQMISC" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TS" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ROUTE" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQ" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DES" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AMT" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="integer"/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_where_clause" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_sql_statement" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="APC"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="19"
+#! FEAT_GEOMTYPE="db_none"
+#! POSITION="153 -365"
+#! ORDER="12"
+#! COLLAPSED="true"
+#! KEYWORD="SQLITE3_1"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="true"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATE" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIME" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LAT" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LON" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATASET" ATTR_TYPE="text"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="integer"/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_where_clause" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_sql_statement" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="complete"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="15"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="2511 -43"
+#! ORDER="14"
+#! COLLAPSED="false"
+#! KEYWORD="CSV_2"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="TS" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATE" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIME" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LAT" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS_TIME" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LON" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ROUTE" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATASET" ATTR_TYPE="char(20)"/>
+#! <DEFLINE_PARM PARM_NAME="csv_append_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="csv_field_names" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="INCOMPLETE"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="24"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="3030 -1374"
+#! ORDER="17"
+#! COLLAPSED="false"
+#! KEYWORD="CSV_3"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="TS" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="APC_STAMPS" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS_TIME" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS" ATTR_TYPE="char(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ROUTE" ATTR_TYPE="char(20)"/>
+#! <DEFLINE_PARM PARM_NAME="csv_append_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! <DEFLINE_PARM PARM_NAME="csv_field_names" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_CSV Destination Comma Separated Value (CSV) Directory:"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data\test.txt"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset_SQLITE3 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Source SQLite3 Database File(s):"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_CSV_5 Destination Comma Separated Value (CSV) Directory:"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_CSV_4 Destination Comma Separated Value (CSV) Directory:"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="7"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="822 -371"
+#! ORDER="8"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LAT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LON" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATASET" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="BUS_TIME,&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;TIMESTAMP&lt;closeparen&gt;*1000&lt;closeparen&gt;+&lt;at&gt;Value&lt;openparen&gt;BUS&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="17"
+#! TYPE="SQLCreator"
+#! VERSION="2"
+#! POSITION="115 -58"
+#! ORDER="9"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="RESULT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="SQLITE3"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLCreator"/>
+#! <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="C:&lt;backslash&gt;AndrewRoss&lt;backslash&gt;Work&lt;backslash&gt;AR_Whistler&lt;backslash&gt;Data&lt;backslash&gt;whistlerData.db"/>
+#! <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;*&lt;space&gt;from&lt;space&gt;GFI&lt;space&gt;where&lt;space&gt;GFI.BUS&lt;space&gt;in&lt;space&gt;V_APCBUS&lt;space&gt;limit&lt;space&gt;10&lt;semicolon&gt;"/>
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="BUS,ROUTE,TIMESTAMP,TS,TYPE"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="9"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="817 -56"
+#! ORDER="10"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="BUS_TIME,&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;TIMESTAMP&lt;closeparen&gt;*1000&lt;closeparen&gt;+&lt;at&gt;Value&lt;openparen&gt;BUS&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="5"
+#! TYPE="FeatureMerger"
+#! VERSION="8"
+#! POSITION="1721 -73"
+#! ORDER="13"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="COMPLETE"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LAT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LON" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATASET" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <OUTPUT_FEAT NAME="INCOMPLETE"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <OUTPUT_FEAT NAME="EMPTY"/>
+#! <FEAT_COLLAPSED COLLAPSED="2"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="2"/>
+#! <OUTPUT_FEAT NAME="REFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="3"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="LAT" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="LON" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="DATASET" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="3"/>
+#! <OUTPUT_FEAT NAME="UNREFERENCED"/>
+#! <FEAT_COLLAPSED COLLAPSED="4"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="LAT" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="LON" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="DATASET" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="4"/>
+#! <OUTPUT_FEAT NAME="DUPLICATE_SUPPLIER"/>
+#! <FEAT_COLLAPSED COLLAPSED="5"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="LAT" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="LON" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="DATASET" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="5"/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="REFEEATTR" PARM_VALUE="BUS_TIME"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureMerger"/>
+#! <XFORM_PARM PARM_NAME="MERGE_TYPE" PARM_VALUE="Attributes Only"/>
+#! <XFORM_PARM PARM_NAME="PROCESS_DUPS" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="BUILD_INCOMPLETE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="REFERATTR" PARM_VALUE="BUS_TIME"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="11"
+#! TYPE="ClassicSQLExecutor"
+#! VERSION="2"
+#! POSITION="2472 -865"
+#! ORDER="15"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.LAT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.LON" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.ABS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="USE_SSPI" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="USER" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="EXTRAATTRS" PARM_VALUE="BUS,TIMESTAMP,LAT,LON,ABS"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ClassicSQLExecutor"/>
+#! <XFORM_PARM PARM_NAME="SERVER" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PORT" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PASS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TIMEOUT" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LISTNAME" PARM_VALUE="apc"/>
+#! <XFORM_PARM PARM_NAME="SERVTYPE" PARM_VALUE="SQLITE3"/>
+#! <XFORM_PARM PARM_NAME="SERVNAME" PARM_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db"/>
+#! <XFORM_PARM PARM_NAME="SQLSTATEMENT" PARM_VALUE="select BUS,TIMESTAMP,LAT,LON,abs( @Value(TIMESTAMP)-TIMESTAMP) as ABS from APC order by ABS limit 2;&#10;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="22"
+#! TYPE="ListConcatenator"
+#! VERSION="1"
+#! POSITION="2475 -1166"
+#! ORDER="16"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS_TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.LAT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.LON" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="apc{}.ABS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="APC_STAMPS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SEP" PARM_VALUE="&lt;comma&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListConcatenator"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="APC_STAMPS"/>
+#! <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="apc{}.TIMESTAMP"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="13"
+#! SOURCE_NODE="9"
+#! TARGET_NODE="5"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="14"
+#! SOURCE_NODE="17"
+#! TARGET_NODE="9"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="20"
+#! SOURCE_NODE="19"
+#! TARGET_NODE="7"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="12"
+#! SOURCE_NODE="7"
+#! TARGET_NODE="5"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="16"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="15"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="21"
+#! SOURCE_NODE="5"
+#! TARGET_NODE="11"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="23"
+#! SOURCE_NODE="11"
+#! TARGET_NODE="22"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="25"
+#! SOURCE_NODE="22"
+#! TARGET_NODE="24"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_SQLITE3_1,DestDataset_CSV_1,CSV_OUT_APPEND_CSV_1,CSV_OUT_FIELD_NAMES_CSV_1,CSV_OUT_SEPARATOR_CSV_1,CSV_OUT_EXTENSION_CSV_1,_OUT_QUOTE_OUTPUT_CSV_1,_QUOTE_FIELD_NAMES_CSV_1,CSV_OUT_ENCODING_CSV_1,CSV_OUT_END_OF_LINE_CSV_1,_WRITE_UTF8_BOM_CSV_1,DestDataset_CSV_2,CSV_OUT_APPEND_CSV_2,CSV_OUT_FIELD_NAMES_CSV_2,CSV_OUT_SEPARATOR_CSV_2,CSV_OUT_EXTENSION_CSV_2,_OUT_QUOTE_OUTPUT_CSV_2,_QUOTE_FIELD_NAMES_CSV_2,CSV_OUT_ENCODING_CSV_2,CSV_OUT_END_OF_LINE_CSV_2,_WRITE_UTF8_BOM_CSV_2,DestDataset_CSV_3,CSV_OUT_APPEND_CSV_3,CSV_OUT_FIELD_NAMES_CSV_3,CSV_OUT_SEPARATOR_CSV_3,CSV_OUT_EXTENSION_CSV_3,_OUT_QUOTE_OUTPUT_CSV_3,_QUOTE_FIELD_NAMES_CSV_3,CSV_OUT_ENCODING_CSV_3,CSV_OUT_END_OF_LINE_CSV_3,_WRITE_UTF8_BOM_CSV_3
+
+
+
+
+DEFAULT_MACRO DestDataset_CSV C:\AndrewRoss\Work\AR_Whistler\Data\test.txt
+GUI DIRNAME DestDataset_CSV Destination Comma Separated Value (CSV) Directory:
+DEFAULT_MACRO SourceDataset_SQLITE3 C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db
+GUI MULTIFILE SourceDataset_SQLITE3 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Source SQLite3 Database File(s):
+DEFAULT_MACRO DestDataset_CSV_5 C:\AndrewRoss\Work\AR_Whistler\Data
+GUI DIRNAME DestDataset_CSV_5 Destination Comma Separated Value (CSV) Directory:
+DEFAULT_MACRO DestDataset_CSV_4 C:\AndrewRoss\Work\AR_Whistler\Data
+GUI DIRNAME DestDataset_CSV_4 Destination Comma Separated Value (CSV) Directory:
+INCLUDE TCL
+proc __FME_ExpandMacros {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\([^()$]*\)}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::FME_MacroValues([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandMacros $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_ExpandEnvVars {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\{[^\{\}$]*\}}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::env([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandEnvVars $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_EvalAndEncodeMacro {macroName} {
+   set macroVal {}
+   catch { set macroVal [__FME_ExpandMacros $::FME_MacroValues($macroName)] }
+   catch { set macroVal [__FME_ExpandEnvVars $macroVal] }
+   return [FME_EncodeText $macroVal]
+}
+END_INCLUDE
+INCLUDE [	puts "MACRO DestDataset_CSV__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_CSV]" ;   ]
+
+INCLUDE [	puts "MACRO SourceDataset_SQLITE3__FMEENCODED__ [__FME_EvalAndEncodeMacro SourceDataset_SQLITE3]" ;   ]
+
+INCLUDE [	puts "MACRO DestDataset_CSV_5__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_CSV_5]" ;   ]
+
+INCLUDE [	puts "MACRO DestDataset_CSV_4__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_CSV_4]" ;   ]
+
+INCLUDE [ if {{$(DestDataset_CSV)} == {}} { puts_real {Parameter 'DestDataset_CSV' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_SQLITE3)} == {}} { puts_real {Parameter 'SourceDataset_SQLITE3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV_5)} == {}} { puts_real {Parameter 'DestDataset_CSV_5' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV_4)} == {}} { puts_real {Parameter 'DestDataset_CSV_4' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE SQLITE3
+READER_KEYWORD SQLITE3_1
+READER_GEN_DIRECTIVES TABLELIST,,_MERGE_SCHEMAS,YES,SQLITE3_EXPOSE_FORMAT_ATTRS,
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CSV
+MULTI_WRITER_KEYWORD{0} CSV_1
+MULTI_WRITER_TYPE{1} CSV
+MULTI_WRITER_KEYWORD{1} CSV_2
+MULTI_WRITER_TYPE{2} CSV
+MULTI_WRITER_KEYWORD{2} CSV_3
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SQLITE3_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SQLITE3 SQLITE3_1
+# ============================================================================
+# First get the dataset for the database. For SQLite3, it's the database file.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_SQLITE3_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SQLITE3 SQLITE3_1
+DEFAULT_MACRO SourceDataset_SQLITE3_1 $(SourceDataset_SQLITE3)
+GUI MULTIFILE SourceDataset_SQLITE3_1 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Source SQLite3 Database File(s):
+SQLITE3_1_DATASET "$(SourceDataset_SQLITE3_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+# ============================================================================
+# The following GUI line prompts for a directory where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_1
+DEFAULT_MACRO DestDataset_CSV_1 $(DestDataset_CSV)
+GUI DIRNAME DestDataset_CSV_1 Destination Comma Separated Value (CSV) Directory:
+CSV_1_PLUGIN_MAX_CHANNELS 100
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_1 No
+CSV_1_APPEND "$(CSV_OUT_APPEND_CSV_1)"
+GUI CHECKBOX CSV_OUT_APPEND_CSV_1 Yes%No Append to File
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_1 yes
+CSV_1_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_1)"
+GUI CHECKBOX CSV_OUT_FIELD_NAMES_CSV_1 yes%no Output Field Names on First Line
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_1 ,
+CSV_1_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_1)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_1 ,%;%|%space%tab Separator Character:
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_1 csv
+CSV_1_EXTENSION "$(CSV_OUT_EXTENSION_CSV_1)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_1 Extension:
+# ============================================================================
+# The following specifies if output values should be quoted
+DEFAULT_MACRO _OUT_QUOTE_OUTPUT_CSV_1 if_needed
+GUI CHOICE _OUT_QUOTE_OUTPUT_CSV_1 yes%if_needed%no Quote Output Values:
+CSV_1_QUOTE_OUTPUT $(_OUT_QUOTE_OUTPUT_CSV_1)
+# ============================================================================
+# The following choice determines if field names on the first row
+# should be quoted or not.
+DEFAULT_MACRO _QUOTE_FIELD_NAMES_CSV_1 no
+GUI CHOICE _QUOTE_FIELD_NAMES_CSV_1 yes%no Quote Field Names:
+CSV_1_QUOTE_FIELD_NAMES $(_QUOTE_FIELD_NAMES_CSV_1)
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_1 
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_ENCODING_CSV_1 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
+CSV_1_ENCODING $(CSV_OUT_ENCODING_CSV_1)
+# =====================================================================
+# Allows to set Line termination type
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_1 
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_1 Windows%Unix%Macintosh Line Termination:
+CSV_1_END_OF_LINE $(CSV_OUT_END_OF_LINE_CSV_1)
+# ============================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO _WRITE_UTF8_BOM_CSV_1 yes
+GUI CHOICE _WRITE_UTF8_BOM_CSV_1 yes%no Write UTF-8 Byte Order Mark
+CSV_1_WRITE_UTF8_BOM $(_WRITE_UTF8_BOM_CSV_1)
+CSV_1_DATASET "$(DestDataset_CSV_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_2
+# ============================================================================
+# The following GUI line prompts for a directory where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_2
+DEFAULT_MACRO DestDataset_CSV_2 $(DestDataset_CSV_5)
+GUI DIRNAME DestDataset_CSV_2 Destination Comma Separated Value (CSV) Directory:
+CSV_2_PLUGIN_MAX_CHANNELS 100
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_2 No
+CSV_2_APPEND "$(CSV_OUT_APPEND_CSV_2)"
+GUI CHECKBOX CSV_OUT_APPEND_CSV_2 Yes%No Append to File
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_2 yes
+CSV_2_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_2)"
+GUI CHECKBOX CSV_OUT_FIELD_NAMES_CSV_2 yes%no Output Field Names on First Line
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_2 ,
+CSV_2_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_2)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_2 ,%;%|%space%tab Separator Character:
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_2 csv
+CSV_2_EXTENSION "$(CSV_OUT_EXTENSION_CSV_2)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_2 Extension:
+# ============================================================================
+# The following specifies if output values should be quoted
+DEFAULT_MACRO _OUT_QUOTE_OUTPUT_CSV_2 if_needed
+GUI CHOICE _OUT_QUOTE_OUTPUT_CSV_2 yes%if_needed%no Quote Output Values:
+CSV_2_QUOTE_OUTPUT $(_OUT_QUOTE_OUTPUT_CSV_2)
+# ============================================================================
+# The following choice determines if field names on the first row
+# should be quoted or not.
+DEFAULT_MACRO _QUOTE_FIELD_NAMES_CSV_2 no
+GUI CHOICE _QUOTE_FIELD_NAMES_CSV_2 yes%no Quote Field Names:
+CSV_2_QUOTE_FIELD_NAMES $(_QUOTE_FIELD_NAMES_CSV_2)
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_2 
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_ENCODING_CSV_2 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
+CSV_2_ENCODING $(CSV_OUT_ENCODING_CSV_2)
+# =====================================================================
+# Allows to set Line termination type
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_2 
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_2 Windows%Unix%Macintosh Line Termination:
+CSV_2_END_OF_LINE $(CSV_OUT_END_OF_LINE_CSV_2)
+# ============================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO _WRITE_UTF8_BOM_CSV_2 yes
+GUI CHOICE _WRITE_UTF8_BOM_CSV_2 yes%no Write UTF-8 Byte Order Mark
+CSV_2_WRITE_UTF8_BOM $(_WRITE_UTF8_BOM_CSV_2)
+CSV_2_DATASET "$(DestDataset_CSV_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_3"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_3
+# ============================================================================
+# The following GUI line prompts for a directory where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV_3 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV CSV_3
+DEFAULT_MACRO DestDataset_CSV_3 $(DestDataset_CSV_4)
+GUI DIRNAME DestDataset_CSV_3 Destination Comma Separated Value (CSV) Directory:
+CSV_3_PLUGIN_MAX_CHANNELS 100
+# =====================================================================
+# Allows one to append
+DEFAULT_MACRO CSV_OUT_APPEND_CSV_3 No
+CSV_3_APPEND "$(CSV_OUT_APPEND_CSV_3)"
+GUI CHECKBOX CSV_OUT_APPEND_CSV_3 Yes%No Append to File
+# ============================================================================
+# The following determines whether field names will be written on
+# the first row of the file.
+DEFAULT_MACRO CSV_OUT_FIELD_NAMES_CSV_3 yes
+CSV_3_FIELD_NAMES "$(CSV_OUT_FIELD_NAMES_CSV_3)"
+GUI CHECKBOX CSV_OUT_FIELD_NAMES_CSV_3 yes%no Output Field Names on First Line
+# ============================================================================
+# The following determines the field seperator
+# PR#19714 Changed GUI LOOKUP to STRING_OR_CHOICE for showing space and tab
+# as explicit delimiters for parsing issues and symmetry with the reader.
+DEFAULT_MACRO CSV_OUT_SEPARATOR_CSV_3 ,
+CSV_3_SEPARATOR "$(CSV_OUT_SEPARATOR_CSV_3)"
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_SEPARATOR_CSV_3 ,%;%|%space%tab Separator Character:
+# ============================================================================
+# The following determines the extension for output CSV files
+DEFAULT_MACRO CSV_OUT_EXTENSION_CSV_3 csv
+CSV_3_EXTENSION "$(CSV_OUT_EXTENSION_CSV_3)"
+GUI OPTIONAL TEXT CSV_OUT_EXTENSION_CSV_3 Extension:
+# ============================================================================
+# The following specifies if output values should be quoted
+DEFAULT_MACRO _OUT_QUOTE_OUTPUT_CSV_3 if_needed
+GUI CHOICE _OUT_QUOTE_OUTPUT_CSV_3 yes%if_needed%no Quote Output Values:
+CSV_3_QUOTE_OUTPUT $(_OUT_QUOTE_OUTPUT_CSV_3)
+# ============================================================================
+# The following choice determines if field names on the first row
+# should be quoted or not.
+DEFAULT_MACRO _QUOTE_FIELD_NAMES_CSV_3 no
+GUI CHOICE _QUOTE_FIELD_NAMES_CSV_3 yes%no Quote Field Names:
+CSV_3_QUOTE_FIELD_NAMES $(_QUOTE_FIELD_NAMES_CSV_3)
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO CSV_OUT_ENCODING_CSV_3 
+GUI OPTIONAL STRING_OR_CHOICE CSV_OUT_ENCODING_CSV_3 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
+CSV_3_ENCODING $(CSV_OUT_ENCODING_CSV_3)
+# =====================================================================
+# Allows to set Line termination type
+DEFAULT_MACRO CSV_OUT_END_OF_LINE_CSV_3 
+GUI OPTIONAL CHOICE CSV_OUT_END_OF_LINE_CSV_3 Windows%Unix%Macintosh Line Termination:
+CSV_3_END_OF_LINE $(CSV_OUT_END_OF_LINE_CSV_3)
+# ============================================================================
+# PR 15909
+# The following choice determines if the byte order mark should be written
+# when using UTF-8 encoding. By default BOM is written, so _WRITE_UTF8_BOM should be yes.
+DEFAULT_MACRO _WRITE_UTF8_BOM_CSV_3 yes
+GUI CHOICE _WRITE_UTF8_BOM_CSV_3 yes%no Write UTF-8 Byte Order Mark
+CSV_3_WRITE_UTF8_BOM $(_WRITE_UTF8_BOM_CSV_3)
+CSV_3_DATASET "$(DestDataset_CSV_3)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)matchGFI.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_SQLITE3_1 SQLITE3_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_1 CSV_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_2 CSV_2
+DEFAULT_MACRO DATASET_KEYWORD_CSV_3 CSV_3
+# -------------------------------------------------------------------------
+
+SQLITE3_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_MF_NAME matchGFI.fmw
+MACRO FME_MF_NAME_MASTER matchGFI.fmw
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME matchGFI
+MACRO FME_VIEWER_APP fmeview
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+SQLITE3_1_DEF APC   sqlite3_sql_statement        ""   sqlite3_where_clause         ""   DATE                         text   TIME                         text   LAT                          float   LON                          float   BUS                          integer   DATASET                      text   TIMESTAMP                    integer
+# -------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   APC yes   "" no
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *   OUTPUT FAILED FEATURE_TYPE *     @LogCount("UnexpectedInput @FeatureType()")     @FeatureType(__TO_REMOVE__)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Unexpected Input Remover Nuker"   INPUT FEATURE_TYPE __TO_REMOVE__
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(SQLITE3,FME_GENERIC,PRESERVE_GEOMETRY)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GFI (SQLITE3_1) Splitter"    INPUT FEATURE_TYPE GFI
+FACTORY_DEF * TeeFactory   FACTORY_NAME "APC Feature Counter -1 20"   INPUT FEATURE_TYPE APC   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 20")
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+Tcl2 proc 62c142d2_3aa2_41d5_85bb_0f2e6adbf1e63_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator_2}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE APC    OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT         "@Tcl2( 62c142d2_3aa2_41d5_85bb_0f2e6adbf1e63_attrSetter {(BUS_TIME,<openparen><at>Value<openparen>TIMESTAMP<closeparen>*1000<closeparen>+<at>Value<openparen>BUS<closeparen>)} )"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_2_OUTPUT Feature Counter -1 12"   INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 12")
+# -------------------------------------------------------------------------
+MACRO SQLCreator_DIRECTIVES 
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME SQLCreator_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME SQLCreator    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>*<space>from<space>GFI<space>where<space>GFI.BUS<space>in<space>V_APCBUS<space>limit<space>10<semicolon>    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE         	SQLITE3    READER_DATASET      	"C:<backslash>AndrewRoss<backslash>Work<backslash>AR_Whistler<backslash>Data<backslash>whistlerData.db"    READER_PARAMS        $(SQLCreator_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE SQLCreator_RESULT
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SQLCreator_RESULT Feature Counter -1 14"   INPUT FEATURE_TYPE SQLCreator_RESULT   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 14")
+# -------------------------------------------------------------------------
+
+Tcl2 proc 52e30f44_fa61_4c63_b772_5dc89432d1ca3_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE SQLCreator_RESULT    OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT         "@Tcl2( 52e30f44_fa61_4c63_b772_5dc89432d1ca3_attrSetter {(BUS_TIME,<openparen><at>Value<openparen>TIMESTAMP<closeparen>*1000<closeparen>+<at>Value<openparen>BUS<closeparen>)} )"
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator_OUTPUT Feature Counter -1 13"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 13")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * ReferenceFactory    FACTORY_NAME FeatureMerger    INPUT REFERENCER FEATURE_TYPE AttributeCreator_OUTPUT    INPUT REFERENCEE FEATURE_TYPE AttributeCreator_2_OUTPUT    REFERENCE_INFO ATTRIBUTES    REFERENCEE_FIELDS "BUS_TIME"    REFERENCER_FIELDS "BUS_TIME"    MERGE_ATTRIBUTES Yes    MANAGE_FME_TYPE Yes    MODE COMPLETE    PROCESS_DUPLICATE_REFERENCEES No    BUILD_INCOMPLETE_REFERENCERS No    OUTPUT COMPLETE FEATURE_TYPE FeatureMerger_COMPLETE    OUTPUT INCOMPLETE FEATURE_TYPE FeatureMerger_INCOMPLETE
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_COMPLETE Feature Counter -1 16"   INPUT FEATURE_TYPE FeatureMerger_COMPLETE   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 16")
+FACTORY_DEF * TeeFactory   FACTORY_NAME "FeatureMerger_INCOMPLETE Feature Counter -1 21"   INPUT FEATURE_TYPE FeatureMerger_INCOMPLETE   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 21")
+# -------------------------------------------------------------------------
+
+MACRO ClassicSQLExecutor_SERVER C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db
+MACRO ClassicSQLExecutor_DB
+INCLUDE [    if {{} != {}} {       puts {MACRO ClassicSQLExecutor_SERVER };       puts {MACRO ClassicSQLExecutor_DB C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData.db};    }; ]
+SQL ClassicSQLExecutor_Conn   SERVER_TYPE     "SQLITE3"   SERVER_NAME     "$(ClassicSQLExecutor_SERVER)"   USER_NAME       ""   PASSWORD        ""   DB_NAME         "$(ClassicSQLExecutor_DB)"   PORT            ""   USE_SSPI        "No"   COMMAND_TIMEOUT ""
+MACRO ClassicSQLExecutor_QUERY select BUS,TIMESTAMP,LAT,LON,abs( @EvaluateExpression(STRING,<at>Value<openparen>TIMESTAMP<closeparen>,ClassicSQLExecutor)-TIMESTAMP) as ABS from APC order by ABS limit 2;
+MACRO ClassicSQLExecutor_LIST_ARG
+INCLUDE [    if {{apc} != {}} {       puts {MACRO ClassicSQLExecutor_LIST_ARG ",apc{}"};    }; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME ClassicSQLExecutor    INPUT  FEATURE_TYPE FeatureMerger_INCOMPLETE    OUTPUT FEATURE_TYPE ClassicSQLExecutor_OUTPUT         @SQL("ClassicSQLExecutor_Conn","$(ClassicSQLExecutor_QUERY)"$(ClassicSQLExecutor_LIST_ARG))
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ClassicSQLExecutor_OUTPUT Feature Counter -1 23"   INPUT FEATURE_TYPE ClassicSQLExecutor_OUTPUT   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 23")
+# -------------------------------------------------------------------------
+
+Tcl2 set ListConcatenator__separator [FME_DecodeText {<comma>}];      set ListConcatenator__bracePos [string first {{}}  {apc{}.TIMESTAMP}]
+Tcl2 proc ListConcatenator__Concatenate {} {    upvar \#0 ListConcatenator__bracePos bracePos              ListConcatenator__separator separator;    set i 0;    set result {};    set nextAttr [string replace {apc{}.TIMESTAMP} $bracePos $bracePos \"\{0\"];    while { [FME_AttributeExists $nextAttr] }    {       lappend result [FME_GetAttribute $nextAttr];       set nextAttr [string replace {apc{}.TIMESTAMP} $bracePos $bracePos \"\{[incr i]\"];    };    FME_SetAttribute {APC_STAMPS} [join $result $separator]; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME ListConcatenator    INPUT  FEATURE_TYPE ClassicSQLExecutor_OUTPUT    OUTPUT FEATURE_TYPE ListConcatenator_OUTPUT         @Tcl2(ListConcatenator__Concatenate)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ListConcatenator_OUTPUT Feature Counter -1 25"   INPUT FEATURE_TYPE ListConcatenator_OUTPUT   OUTPUT FEATURE_TYPE *     @LogCount("LINK -1 25")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "FeatureMerger_COMPLETE -> complete Correlator"    INPUT FEATURE_TYPE FeatureMerger_COMPLETE    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 1       @Transform(FME_GENERIC,CSV)       @SupplyAttributes(__wb_out_feat_type__,complete)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "ListConcatenator_OUTPUT -> INCOMPLETE Correlator"    INPUT FEATURE_TYPE ListConcatenator_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 2       @Transform(FME_GENERIC,CSV)       @SupplyAttributes(__wb_out_feat_type__,INCOMPLETE)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 {@Value(fme_template_feature_type)} 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+CSV_2_DEF complete   csv_append_mode              INHERIT_FROM_WRITER   csv_field_names              INHERIT_FROM_WRITER   TS                           char(20)   DATE                         char(20)   TIME                         char(20)   LAT                          char(20)   TYPE                         char(20)   BUS_TIME                     char(20)   TIMESTAMP                    char(20)   LON                          char(20)   BUS                          char(20)   ROUTE                        char(20)   DATASET                      char(20)
+# -------------------------------------------------------------------------
+CSV_3_DEF INCOMPLETE   csv_append_mode              INHERIT_FROM_WRITER   csv_field_names              INHERIT_FROM_WRITER   TS                           char(20)   TYPE                         char(20)   APC_STAMPS                   char(20)   BUS_TIME                     char(20)   TIMESTAMP                    char(20)   BUS                          char(20)   ROUTE                        char(20)

@@ -1,0 +1,1679 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Windows command-line to run this workspace:
+#    
+#    
+#    fme.exe collectAPC.fmw
+#          --SourceDataset_CSV_3 \\vtcapc2010v1\APCDATA\APC\Whistler\data_nova\2013*\*.dat
+#          --DestDataset_SQLITE3 C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db
+#    
+#    
+#! LAST_SAVE_BUILD="FME(R) 2012 SP2 (20120417 - Build 12238 - WIN64)"
+#! MAX_LOG_FEATURES="200"
+#! SOURCE="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! END_TCL=""
+#! DESTINATION="NONE"
+#! SHOW_BOOKMARKS="true"
+#! GRID_VISIBLE="false"
+#! SHOW_ANNOTATIONS="true"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! END_PYTHON=""
+#! CATEGORY=""
+#! REQUIREMENTS_KEYWORD=""
+#! GRID_HEIGHT="50"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_BUILD_NUM="12238"
+#! SHOW_INFO_NODES="true"
+#! BEGIN_PYTHON=""
+#! DESCRIPTION=""
+#! GRID_SNAPTO="false"
+#! GRID_WIDTH="50"
+#! BEGIN_TCL=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! LOG_FILE=""
+#! HISTORY=""
+#! VIEW_POSITION="0 0"
+#! SOURCE_ROUTING_FILE=""
+#! ZOOM_SCALE="100"
+#! PASSWORD=""
+#! VIEW_PAGE_BREAKS="false"
+#! WORKSPACE_VERSION="1"
+#! DESTINATION_ROUTING_FILE=""
+#! LAST_SAVE_DATE="2013-02-25T17:16:55"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! TITLE=""
+#! USAGE=""
+#! IGNORE_READER_FAILURE="No"
+#! REQUIREMENTS=""
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! REDIRECT_TERMINATORS="NONE"
+#! ATTR_TYPE_ENCODING="SDF"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(SourceDataset_CSV_3)"
+#! KEYWORD="CSV_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type char(50) fme_text_string char(50) multi_reader_full_id number(11,0) fme_feature_type char(50) fme_basename char(50) multi_reader_type char(50) fme_geometry fme_char(50) multi_reader_keyword char(50) fme_sweep_angle number(31,15) csv_number_of_fields number(11,0) fme_rotation number(31,15) csv_line_number number(11,0) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_text_size number(31,15) fme_color char(50) multi_reader_id number(11,0)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! MIN_FEATURES=""
+#! START_FEATURE=""
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="SQLITE3"
+#! DATASET="$(DestDataset_SQLITE3)"
+#! KEYWORD="SQLITE3_1"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="255"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="sqlite3_update_key_columns &quot;&quot; sqlite3_drop_table NO sqlite3_truncate_table NO sqlite3_table_writer_mode INHERIT_FROM_WRITER"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type varchar(50) fme_text_string varchar(50) fme_db_operation varchar(8) fme_feature_type varchar(50) fme_basename varchar(50) fme_where varchar(254) fme_geometry fme_char(50) fme_sweep_angle float fme_rotation float fme_secondary_axis float fme_fill_color varchar(50) fme_dataset varchar(50) fme_primary_axis float fme_db_transaction varchar(16) fme_start_angle float fme_text_size float fme_color varchar(50) db_type varchar(254)"
+#! DEFLINE_PARMS="&quot;GUI CHOICE sqlite3_drop_table NO%YES Drop Table First&quot; NO &quot;GUI CHOICE sqlite3_truncate_table NO%YES Truncate Table First&quot; NO &quot;GUI CHOICE sqlite3_table_writer_mode INHERIT_FROM_WRITER%INSERT%UPDATE%DELETE Writer Mode&quot; INHERIT_FROM_WRITER &quot;GUI OPTIONAL ATTRLIST_COMMAS sqlite3_update_key_columns SQL Key Columns&quot; &quot;&quot; "
+#! ATTR_INDEX_TYPES="indexed unique"
+#! ATTR_NAME_INVALID_CHARS="&quot;"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="ALLOW_DATASET_CONFLICT"
+#! VALUE="YES"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(31,15)"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(15,7)"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(11,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(6,0)"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int16"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="blob"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_date"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_time"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="varchar(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="varchar(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="SQLITE3"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="real(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="SQLITE3"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="SQLITE3"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="db_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="SQLITE3"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="9304"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="26"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="65 -897"
+#! ORDER="14"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="char(11)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="char(9)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="number(8,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col3" ATTR_TYPE="number(10,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col4" ATTR_TYPE="number(9,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col5" ATTR_TYPE="char(72)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col6" ATTR_TYPE="char(1)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_dataset" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="9303"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="25"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="56 -706"
+#! ORDER="15"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="char(11)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="char(9)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="number(8,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col3" ATTR_TYPE="number(10,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col4" ATTR_TYPE="number(9,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col5" ATTR_TYPE="char(72)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col6" ATTR_TYPE="char(1)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_dataset" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="9302"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="24"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="28 -497"
+#! ORDER="16"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="char(11)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col1" ATTR_TYPE="char(9)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col2" ATTR_TYPE="number(8,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col3" ATTR_TYPE="number(10,5)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col4" ATTR_TYPE="char(255)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col5" ATTR_TYPE="char(72)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="col6" ATTR_TYPE="char(1)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_dataset" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="APC_RAW"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="35"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="3277 -692"
+#! ORDER="28"
+#! COLLAPSED="false"
+#! KEYWORD="SQLITE3_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATETIME" ATTR_TYPE="varchar(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUSID" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LATITUDE" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LONGITUDE" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ALT" ATTR_TYPE="float"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATE" ATTR_TYPE="varchar(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIME" ATTR_TYPE="varchar(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUSDAY" ATTR_TYPE="integer"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="varchar(5)"/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_update_key_columns" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_truncate_table" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="sqlite3_table_writer_mode" PARM_VALUE="INHERIT_FROM_WRITER"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset_CSV_3 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):"
+#! DEFAULT_VALUE="\\vtcapc2010v1\APCDATA\APC\Whistler\data_nova\2013*\*.dat"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI FILENAME DestDataset_SQLITE3 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Destination SQLite3 Database File:"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="3"
+#! TYPE="AttributeRenamer"
+#! VERSION="2"
+#! POSITION="589 -370"
+#! ORDER="17"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="col0,DATE,&quot;&quot;,col1,TIME,&quot;&quot;,col2,LATITUDE,&quot;&quot;,col3,LONGITUDE,&quot;&quot;,col4,ALT,&quot;&quot;,col5,DATA,&quot;&quot;,fme_basename,BUSID,&quot;&quot;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="19"
+#! TYPE="StringConcatenator"
+#! VERSION="6"
+#! POSITION="1207 -368"
+#! ORDER="18"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="PARM_LINE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;DATE&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;TIME&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringConcatenator"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="DATETIME"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="17"
+#! TYPE="DateFormatter"
+#! VERSION="2"
+#! POSITION="1202 -954"
+#! ORDER="19"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DateFormatter"/>
+#! <XFORM_PARM PARM_NAME="FMT" PARM_VALUE="%s"/>
+#! <XFORM_PARM PARM_NAME="DATE_ATTR" PARM_VALUE="_TIMESTAMP"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="20"
+#! TYPE="SubstringExtractor"
+#! VERSION="0"
+#! POSITION="2386 -377"
+#! ORDER="20"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="SRC_ATTR" PARM_VALUE="DATA"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="END" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SubstringExtractor"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="START" PARM_VALUE="1"/>
+#! <XFORM_PARM PARM_NAME="RESULT_ATTR" PARM_VALUE="TYPE"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="43"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="1806 -372"
+#! ORDER="21"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="BUSDAY,&lt;at&gt;Evaluate&lt;openparen&gt;int&lt;openparen&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;TIMESTAMP&lt;closeparen&gt;&lt;space&gt;-&lt;openparen&gt;5*60*60&lt;closeparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;solidus&gt;&lt;space&gt;&lt;openparen&gt;24*60*60&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="32"
+#! TYPE="Tester"
+#! VERSION="1"
+#! POSITION="2321 -801"
+#! ORDER="22"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_3"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &quot;@Value(TYPE)&quot; NOT_LIKE &quot;D&quot;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="30"
+#! TYPE="Tester"
+#! VERSION="1"
+#! POSITION="1199 -1554"
+#! ORDER="23"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &quot;@Value(TIMESTAMP)&quot; &gt;= &quot;1359349200&quot;&#10;TEST &quot;@Value(TIMESTAMP)&quot; &lt;= &quot;1360645200&quot;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="AND"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="37"
+#! TYPE="AttributeCreator"
+#! VERSION="2"
+#! POSITION="1194 -1272"
+#! ORDER="24"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="TIMESTAMP,&lt;at&gt;Evaluate&lt;openparen&gt;&lt;openparen&gt;&lt;at&gt;Value&lt;openparen&gt;_TIMESTAMP&lt;closeparen&gt;&lt;space&gt;-&lt;openparen&gt;8*60*60&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="6"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="617 -1070"
+#! ORDER="25"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="col6"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="13"
+#! TYPE="Tester"
+#! VERSION="1"
+#! POSITION="600 -689"
+#! ORDER="26"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="PASSED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <OUTPUT_FEAT NAME="FAILED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="col6" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="1"/>
+#! <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FilterLatLon"/>
+#! <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &quot;@Value(LATITUDE)&quot; &gt; &quot;0&quot;&#10;TEST &quot;@Evaluate(abs(@Value(LONGITUDE)))&quot; &gt; &quot;0&quot;"/>
+#! <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="AND"/>
+#! <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="40"
+#! TYPE="AttributeCopier"
+#! VERSION="2"
+#! POSITION="1227 -666"
+#! ORDER="27"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATA" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_dataset" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCopier"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_TIMESTAMP,DATETIME"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="16"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="13"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="18"
+#! SOURCE_NODE="13"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="23"
+#! SOURCE_NODE="6"
+#! TARGET_NODE="19"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="33"
+#! SOURCE_NODE="20"
+#! TARGET_NODE="32"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="27"
+#! SOURCE_NODE="24"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="28"
+#! SOURCE_NODE="25"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="29"
+#! SOURCE_NODE="26"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="38"
+#! SOURCE_NODE="17"
+#! TARGET_NODE="37"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="39"
+#! SOURCE_NODE="37"
+#! TARGET_NODE="30"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="41"
+#! SOURCE_NODE="19"
+#! TARGET_NODE="40"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="42"
+#! SOURCE_NODE="40"
+#! TARGET_NODE="17"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="36"
+#! SOURCE_NODE="32"
+#! TARGET_NODE="35"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="44"
+#! SOURCE_NODE="30"
+#! TARGET_NODE="43"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="45"
+#! SOURCE_NODE="43"
+#! TARGET_NODE="20"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#! NAME="DateConverter"
+#! LEGAL_TERMS_CONDITIONS="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (c) 2012 Safe Software Inc.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Permission is granted to anyone, free of charge, to use, modify and distribute the object code form of this transformer for any purpose, subject to the following restrictions:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1) The origin of this transformer and associated FME(R) software must not be misrepresented.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2) This transformer may only be used in conjunction with a validly licensed copy of FME software.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;THIS SOFTWARE IS PROVIDED BY SAFE SOFTWARE INC. &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SAFE SOFTWARE INC. BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &lt;/p&gt;&#10;"
+#! SUPPRESS_UPGRADE="false"
+#! CATEGORY="Calculators"
+#! REQUIREMENTS_KEYWORD="none"
+#! DESCRIPTION="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This transformer will convert dates between two user configurable formats &lt;/p&gt;&#10;"
+#! FME_PROCESS_COUNT="NO_PARALLELISM"
+#! HISTORY="Dec&lt;space&gt;6&lt;space&gt;2012,Dave&lt;space&gt;Campanas,Initial&lt;space&gt;Creation"
+#! VIEW_POSITION="0 -191"
+#! ZOOM_SCALE="100"
+#! FME_PROCESS_GROUP_BY=""
+#! IS_VISIBLE="true"
+#! TITLE="DateConverter"
+#! USAGE="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This transformer take three parameters:&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600;&quot;&gt;Source attribute:&lt;/span&gt; Attribute to convert&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600;&quot;&gt;Input Format: &lt;/span&gt;Format string describing the input date format. This transformer uses the Python time directives, listed below.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600;&quot;&gt;Output format: &lt;/span&gt;Format string describing the output date format.&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Directive&lt;/span&gt;&#10;    &lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Meaning&lt;/span&gt;&#10;&lt;/p&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;/&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%a Locale’s abbreviated weekday name. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%A Locale’s full weekday name. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%b Locale’s abbreviated month name. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%B Locale’s full month name. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%c Locale’s appropriate date and time representation. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%d Day of the month as a decimal number [01,31]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%H Hour (24-hour clock) as a decimal number [00,23]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%I Hour (12-hour clock) as a decimal number [01,12]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%j Day of the year as a decimal number [001,366]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%m Month as a decimal number [01,12]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%M Minute as a decimal number [00,59]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%p Locale’s equivalent of either AM or PM.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%S Second as a decimal number [00,61].&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%U Week number of the year (Sunday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Sunday are considered to be in week 0.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%w Weekday as a decimal number [0(Sunday),6]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%W Week number of the year (Monday as the first day of the week) as a decimal number [00,53]. All days in a new year preceding the first Monday are considered to be in week 0.&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%x Locale’s appropriate date representation. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%X Locale’s appropriate time representation. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%y Year without century as a decimal number [00,99]. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%Y Year with century as a decimal number. &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%Z Time zone name (no characters if no time zone exists). &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;%% A literal &apos;%&apos; character. &lt;/p&gt;&#10;"
+#! REQUIREMENTS="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FME 2012 +&lt;/p&gt;&#10;"
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI ATTR SRC_ATTR Source Attribute:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT_OR_ATTR IN_FMT Input Format:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI TEXT_OR_ATTR OUT_FMT Output Format:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="11"
+#! COMMENT_VALUE="Get source attribute&#13;&#10;with dialog"
+#! POSITION="864 -563"
+#! ORDER="9"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#! IDENTIFIER="12"
+#! COMMENT_VALUE="Get in/out formats"
+#! POSITION="1437 -604"
+#! ORDER="10"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="1"
+#! />
+#! <COMMENT
+#! IDENTIFIER="13"
+#! COMMENT_VALUE="Convert date"
+#! POSITION="2054 -615"
+#! ORDER="11"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="2"
+#! />
+#! <COMMENT
+#! IDENTIFIER="14"
+#! COMMENT_VALUE="Clean up attributes"
+#! POSITION="2639 -615"
+#! ORDER="14"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="3"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="0"
+#! TYPE="SubstringExtractor"
+#! VERSION="0"
+#! POSITION="811 -706"
+#! ORDER="5"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_in_date" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="SRC_ATTR" PARM_VALUE="$(SRC_ATTR)"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="END" PARM_VALUE="-1"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SubstringExtractor"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="START" PARM_VALUE="0"/>
+#! <XFORM_PARM PARM_NAME="RESULT_ATTR" PARM_VALUE="_DateConverter_in_date"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="1"
+#! TYPE="ParameterFetcher"
+#! VERSION="4"
+#! POSITION="1380 -709"
+#! ORDER="6"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_in_date" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_SRC_ATTR" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_IN_FMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_OUT_FMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ParameterFetcher"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_DateConverter_SRC_ATTR {$(SRC_ATTR)} _DateConverter_IN_FMT {$(IN_FMT)} _DateConverter_OUT_FMT {$(OUT_FMT)}"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="PythonCaller"
+#! VERSION="3"
+#! POSITION="1972 -705"
+#! ORDER="7"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_in_date" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_SRC_ATTR" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_IN_FMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="_DateConverter_OUT_FMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="convertDate"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;time&lt;lf&gt;#&lt;space&gt;Template&lt;space&gt;Function&lt;space&gt;interface:&lt;lf&gt;def&lt;space&gt;convertDate&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;get&lt;space&gt;input&lt;space&gt;date&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inDate&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_DateConverter_in_date&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;get&lt;space&gt;input&lt;space&gt;format&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;inFormat&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_DateConverter_IN_FMT&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;get&lt;space&gt;output&lt;space&gt;format&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outFormat&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_DateConverter_OUT_FMT&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#get&lt;space&gt;output&lt;space&gt;attribute&lt;space&gt;name&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outAttr&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_DateConverter_SRC_ATTR&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;convert&lt;space&gt;date&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;t&lt;space&gt;=&lt;space&gt;time.strptime&lt;openparen&gt;inDate&lt;comma&gt;inFormat&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;outDate&lt;space&gt;=&lt;space&gt;time.strftime&lt;openparen&gt;outFormat&lt;comma&gt;t&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;set&lt;space&gt;date&lt;space&gt;as&lt;space&gt;new&lt;space&gt;attribute&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;outAttr&lt;comma&gt;outDate&lt;closeparen&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="3"
+#! TYPE="AttributeRemover"
+#! VERSION="0"
+#! POSITION="2573 -701"
+#! ORDER="8"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRemover"/>
+#! <XFORM_PARM PARM_NAME="REMOVE_ATTRS" PARM_VALUE="_DateConverter_in_date,_DateConverter_SRC_ATTR,_DateConverter_IN_FMT,_DateConverter_OUT_FMT"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="4"
+#! NAME="INPUT"
+#! POSITION="179 -714"
+#! PUBLISHED="true"
+#! IS_SOURCE="true"
+#! />
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="5"
+#! NAME="OUTPUT"
+#! POSITION="3280 -786"
+#! IS_SOURCE="false"
+#! />
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="6"
+#! SOURCE_NODE="4"
+#! TARGET_NODE="0"
+#! SOURCE_PORT_DESC="0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="7"
+#! SOURCE_NODE="0"
+#! TARGET_NODE="1"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="8"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="9"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="3"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="10"
+#! SOURCE_NODE="3"
+#! TARGET_NODE="5"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! <SUBDOCUMENT
+#! NAME="bingo"
+#! LEGAL_TERMS_CONDITIONS=""
+#! SUPPRESS_UPGRADE="false"
+#! CATEGORY=""
+#! REQUIREMENTS_KEYWORD="none"
+#! DESCRIPTION=""
+#! FME_PROCESS_COUNT="NO_PARALLELISM"
+#! HISTORY=",,"
+#! VIEW_POSITION="0 0"
+#! ZOOM_SCALE="100"
+#! FME_PROCESS_GROUP_BY=""
+#! IS_VISIBLE="false"
+#! TITLE="bingo"
+#! USAGE=""
+#! REQUIREMENTS=""
+#! >
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="0"
+#! NAME="INPUT"
+#! POSITION="100 -80"
+#! PUBLISHED="true"
+#! IS_SOURCE="true"
+#! />
+#! <SUBDOCUMENT_IO
+#! IDENTIFIER="1"
+#! NAME="OUTPUT"
+#! POSITION="1864 -183"
+#! IS_SOURCE="false"
+#! />
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_CSV_2,_SKIP_LINES_CSV_2,_SKIP_FOOTER_CSV_2,_STRIP_QUOTES_CSV_2,_DUPLICATE_DELIMS_CSV_2,_ENCODING_CSV_2,DestDataset_SQLITE3_1,SQLITE3_OUT_WRITER_MODE_SQLITE3_1,SQLITE3_OUT_START_TRANSACTION_SQLITE3_1,SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1,SQLITE3_OUT_BEGIN_SQL_SQLITE3_1,SQLITE3_OUT_END_SQL_SQLITE3_1,SQLITE3_OUT_INIT_TABLES_SQLITE3_1
+
+
+DEFAULT_MACRO SourceDataset_CSV_3 \\vtcapc2010v1\APCDATA\APC\Whistler\data_nova\2013*\*.dat
+GUI MULTIFILE SourceDataset_CSV_3 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
+DEFAULT_MACRO DestDataset_SQLITE3 C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db
+GUI FILENAME DestDataset_SQLITE3 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Destination SQLite3 Database File:
+INCLUDE TCL
+proc __FME_ExpandMacros {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\([^()$]*\)}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::FME_MacroValues([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandMacros $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_ExpandEnvVars {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\{[^\{\}$]*\}}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::env([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandEnvVars $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_EvalAndEncodeMacro {macroName} {
+   set macroVal {}
+   catch { set macroVal [__FME_ExpandMacros $::FME_MacroValues($macroName)] }
+   catch { set macroVal [__FME_ExpandEnvVars $macroVal] }
+   return [FME_EncodeText $macroVal]
+}
+END_INCLUDE
+INCLUDE [	puts "MACRO SourceDataset_CSV_3__FMEENCODED__ [__FME_EvalAndEncodeMacro SourceDataset_CSV_3]" ;   ]
+
+INCLUDE [	puts "MACRO DestDataset_SQLITE3__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_SQLITE3]" ;   ]
+
+INCLUDE [ if {{$(SourceDataset_CSV_3)} == {}} { puts_real {Parameter 'SourceDataset_CSV_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_SQLITE3)} == {}} { puts_real {Parameter 'DestDataset_SQLITE3' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE CSV
+READER_KEYWORD CSV_2
+WRITER_TYPE SQLITE3
+WRITER_KEYWORD SQLITE3_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset_CSV_3)
+GUI MULTIFILE SourceDataset_CSV_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_2 NO
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_2 NO
+DEFAULT_MACRO _EXTENSION_CSV_2 CSV
+DEFAULT_MACRO _SKIP_LINES_CSV_2 0
+CSV_2_SKIP_LINES $(_SKIP_LINES_CSV_2)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_2 0
+CSV_2_SKIP_FOOTER $(_SKIP_FOOTER_CSV_2)
+CSV_2_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_2)
+CSV_2_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_2)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_2 yes
+CSV_2_STRIP_QUOTES $(_STRIP_QUOTES_CSV_2)
+CSV_2_SEPARATOR (";")
+CSV_2_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_2 no
+CSV_2_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_2)
+CSV_2_SEQUENCED no
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_2_UNENCODED_ATTR_PREFIX fme_ csv_
+GUI INTEGER _SKIP_LINES_CSV_2 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_2 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_2 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_2 yes%no Skip Duplicate Delimiters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_2 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_2 UTF-8%UTF-16LE%UTF-16BE%ANSI%BIG5%SJIS%CP437%CP708%CP720%CP737%CP775%CP850%CP852%CP855%CP857%CP860%CP861%CP862%CP863%CP864%CP865%CP866%CP869%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%CP1258%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9%ISO8859-13%ISO8859-15 Character Encoding:
+CSV_2_ENCODING $(_ENCODING_CSV_2)
+CSV_2_DATASET "$(SourceDataset_CSV_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SQLITE3_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER SQLITE3 SQLITE3_1
+# ============================================================================
+# First get the dataset for the database. For SQLite3, it's the database file.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_SQLITE3_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER SQLITE3 SQLITE3_1
+DEFAULT_MACRO DestDataset_SQLITE3_1 $(DestDataset_SQLITE3)
+GUI FILENAME DestDataset_SQLITE3_1 SQLite3_Database_Files(*.sl3;*.db)|*.sl3;*.db|SQLite3_Database_Files(*.sl3)|*.sl3|SQLite3_Database_Files(*.db)|*.db|All_files(*.*)|*.* Destination SQLite3 Database File:
+# ============================================================================
+# This keyword sets the mode of the writer
+DEFAULT_MACRO SQLITE3_OUT_WRITER_MODE_SQLITE3_1 INSERT
+GUI CHOICE SQLITE3_OUT_WRITER_MODE_SQLITE3_1 INSERT%UPDATE%DELETE Writer Mode:
+SQLITE3_1_WRITER_MODE $(SQLITE3_OUT_WRITER_MODE_SQLITE3_1)
+# ============================================================================
+# This keyword sets the starting transaction
+DEFAULT_MACRO SQLITE3_OUT_START_TRANSACTION_SQLITE3_1 0
+GUI OPTIONAL TEXT SQLITE3_OUT_START_TRANSACTION_SQLITE3_1 Start transaction at:
+SQLITE3_1_START_TRANSACTION $(SQLITE3_OUT_START_TRANSACTION_SQLITE3_1)
+# ============================================================================
+# This keyword sets the number of features between transaction commits
+DEFAULT_MACRO SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1 500
+GUI OPTIONAL TEXT SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1 Transaction interval:
+SQLITE3_1_TRANSACTION_INTERVAL $(SQLITE3_OUT_TRANSACTION_INTERVAL_SQLITE3_1)
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# table.
+DEFAULT_MACRO SQLITE3_OUT_BEGIN_SQL_SQLITE3_1 
+GUI OPTIONAL TEXT_EDIT_SQL SQLITE3_OUT_BEGIN_SQL_SQLITE3_1 SQL Statement to Execute Before Translation:
+SQLITE3_1_BEGIN_SQL{0} "$(SQLITE3_OUT_BEGIN_SQL_SQLITE3_1)"
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# tables.
+DEFAULT_MACRO SQLITE3_OUT_END_SQL_SQLITE3_1 
+GUI OPTIONAL TEXT_EDIT_SQL SQLITE3_OUT_END_SQL_SQLITE3_1 SQL Statement to Execute After Translation:
+SQLITE3_1_END_SQL{0} "$(SQLITE3_OUT_END_SQL_SQLITE3_1)"
+# ============================================================================
+# The following specifies when we should perform table initialization.
+# Table initialization is when we DROP, TRUNCATE, and CREATE TABLE.
+DEFAULT_MACRO SQLITE3_OUT_INIT_TABLES_SQLITE3_1 FIRSTFEATURE
+GUI CHOICE SQLITE3_OUT_INIT_TABLES_SQLITE3_1 FIRSTFEATURE%IMMEDIATELY Initialize Tables:
+SQLITE3_1_INIT_TABLES "$(SQLITE3_OUT_INIT_TABLES_SQLITE3_1)"
+SQLITE3_1_DATASET "$(DestDataset_SQLITE3_1)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)collectAPC.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_2 CSV_2
+DEFAULT_MACRO DATASET_KEYWORD_SQLITE3_1 SQLITE3_1
+# -------------------------------------------------------------------------
+
+CSV_2_READER_META_ATTRIBUTES fme_basename fme_dataset fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME collectAPC
+MACRO FME_VIEWER_APP fmeview
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+CSV_2_DEF 9302   col0                         char(11)   col1                         char(9)   col2                         number(8,5)   col3                         number(10,5)   col4                         char(255)   col5                         char(72)   col6                         char(1)
+# -------------------------------------------------------------------------
+CSV_2_DEF 9304   col0                         char(11)   col1                         char(9)   col2                         number(8,5)   col3                         number(10,5)   col4                         number(9,5)   col5                         char(72)   col6                         char(1)
+# -------------------------------------------------------------------------
+CSV_2_DEF 9303   col0                         char(11)   col1                         char(9)   col2                         number(8,5)   col3                         number(10,5)   col4                         number(9,5)   col5                         char(72)   col6                         char(1)
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   9302 yes   9303 yes   9304 yes   "" no
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(CSV,FME_GENERIC,PRESERVE_GEOMETRY)
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE 9302    INPUT  FEATURE_TYPE 9303    INPUT  FEATURE_TYPE 9304    OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT         @RenameAttributes(ATTR_LIST_DEF_VAL, col0,DATE,"",col1,TIME,"",col2,LATITUDE,"",col3,LONGITUDE,"",col4,ALT,"",col5,DATA,"",fme_basename,BUSID,"")
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME FilterLatLon    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    TEST "@Value(LATITUDE)" > "0" TEST "@EvaluateExpression(STRING,<at>Evaluate<openparen>abs<openparen><at>Value<openparen>LONGITUDE<closeparen><closeparen><closeparen>,FilterLatLon)" > "0"    BOOLEAN_OPERATOR AND    OUTPUT PASSED FEATURE_TYPE FilterLatLon_PASSED
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO AttributeRemover_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "{\[0-9\]+}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeRemover    INPUT  FEATURE_TYPE FilterLatLon_PASSED    OUTPUT FEATURE_TYPE AttributeRemover_OUTPUT        @RemoveAttributes(col6)        @RemoveAttributes(fme_regexp_match"$(AttributeRemover_LIST_EXP)")
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc 3d01c1fe_26e3_4a65_8373_46d8037ff2af18_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {DATETIME}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringConcatenator    INPUT  FEATURE_TYPE AttributeRemover_OUTPUT    OUTPUT FEATURE_TYPE StringConcatenator_OUTPUT        @Tcl2("3d01c1fe_26e3_4a65_8373_46d8037ff2af18_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>DATE<closeparen><space><at>Value<openparen>TIME<closeparen>,StringConcatenator)} ")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCopier    INPUT  FEATURE_TYPE StringConcatenator_OUTPUT    OUTPUT FEATURE_TYPE AttributeCopier_OUTPUT         @CopyAttributes(_TIMESTAMP,DATETIME)
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc DateFormatter_formatter {} {     catch {       set dateFormat {%s};       if { [string compare $dateFormat {FME Date/Time (%Y%m%d%H%M%S)}] == 0 } {          set dateFormat {%Y%m%d%H%M%S};       } elseif { [string compare $dateFormat {FME Date (%Y%m%d)}] == 0} {          set dateFormat {%Y%m%d};       } elseif { [string compare $dateFormat {FME Time (%H%M%S)}] == 0} {          set dateFormat {%H%M%S};       } elseif { [string compare $dateFormat {XML Date (%Y-%m-%d)}] == 0} {          set dateFormat {%Y-%m-%d};       } elseif { [string compare $dateFormat {XML DateTime (%Y-%m-%dT%H:%M:%S)}] == 0} {          set dateFormat {%Y-%m-%dT%H:%M:%S};       } elseif { [string compare $dateFormat {XML Time (%H:%M:%S)}] == 0} {          set dateFormat {%H:%M:%S};       } elseif { [string compare $dateFormat {Locale Date (%c)}] == 0} {          set dateFormat {%c};       };       set attrs [split {_TIMESTAMP} {,}];       foreach attr $attrs {          set date [string trim [FME_GetAttribute $attr]];          set dateLen [string length $date];          if {$dateLen > 0} {             set attrFull $attr;             append attrFull .full;             set fullDate [FME_GetAttribute $attrFull];             if { [string compare -length $dateLen $date $fullDate] == 0 } {                set extra [string range $fullDate $dateLen end]000000;                set date [format {%s %s:%s:%s} $date [string range $extra 0 1]                                                     [string range $extra 2 3]                                                     [string range $extra 4 5]];             } elseif {($dateLen == 14) && [regexp {^[0-9]*$} $date]} {                set date [format {%sT%s} [string range $date 0 7]                                         [string range $date 8 end]];             };          };          set seconds [clock scan $date];          FME_SetAttribute $attr [clock format $seconds -format $dateFormat];       };     } }
+FACTORY_DEF * TeeFactory    FACTORY_NAME DateFormatter    INPUT  FEATURE_TYPE AttributeCopier_OUTPUT    OUTPUT FEATURE_TYPE DateFormatter_OUTPUT         @Tcl2(DateFormatter_formatter)
+
+# -------------------------------------------------------------------------
+
+Tcl2 proc 21e7be39_0436_466a_bbf3_9e477e4fd3b210_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator_3}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator_3}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_3    INPUT  FEATURE_TYPE DateFormatter_OUTPUT    OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT         "@Tcl2( 21e7be39_0436_466a_bbf3_9e477e4fd3b210_attrSetter {(TIMESTAMP,<at>Evaluate<openparen><openparen><at>Value<openparen>_TIMESTAMP<closeparen><space>-<openparen>8*60*60<closeparen><closeparen><closeparen>)} )"
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_2    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    TEST "@Value(TIMESTAMP)" >= "1359349200" TEST "@Value(TIMESTAMP)" <= "1360645200"    BOOLEAN_OPERATOR AND    OUTPUT PASSED FEATURE_TYPE Tester_2_PASSED
+# -------------------------------------------------------------------------
+
+Tcl2 proc 6d5abb47_915f_4ce0_9501_4a8549960a3f9_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator_5}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator_5}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_5    INPUT  FEATURE_TYPE Tester_2_PASSED    OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT         "@Tcl2( 6d5abb47_915f_4ce0_9501_4a8549960a3f9_attrSetter {(BUSDAY,<at>Evaluate<openparen>int<openparen><openparen><at>Value<openparen>TIMESTAMP<closeparen><space>-<openparen>5*60*60<closeparen><closeparen><space><solidus><space><openparen>24*60*60<closeparen><closeparen><closeparen>)} )"
+
+# -------------------------------------------------------------------------
+
+# Since the Tcl "END" index specification starts at -1 for the second
+# last character, and we've defined -1 to be the last charater, we've got
+# small bit of fiddling to do
+
+Tcl2 proc SubstringExtractor_fixLastIndex {lastValue} {     if {$lastValue < -1} {         incr lastValue;         return "end$lastValue";     }     elseif {$lastValue == -1} {         return "end";     }     else {         return $lastValue;     } }
+Tcl2 proc SubstringExtractor_extract {startIdx endIdx} {     FME_SetAttribute {TYPE}         [string range [FME_GetAttribute {"DATA"}]                       [SubstringExtractor_fixLastIndex $startIdx]                       [SubstringExtractor_fixLastIndex $endIdx]]     }
+FACTORY_DEF * TeeFactory    FACTORY_NAME SubstringExtractor    INPUT  FEATURE_TYPE AttributeCreator_5_OUTPUT    OUTPUT FEATURE_TYPE SubstringExtractor_OUTPUT         @Tcl2("SubstringExtractor_extract 1 1")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester_3    INPUT  FEATURE_TYPE SubstringExtractor_OUTPUT    TEST "@Value(TYPE)" NOT_LIKE "D"    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_3_PASSED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Tester_3_PASSED -> APC_RAW Correlator"    INPUT FEATURE_TYPE Tester_3_PASSED    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Transform(FME_GENERIC,SQLITE3)       @SupplyAttributes(__wb_out_feat_type__,APC_RAW)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 {@Value(fme_template_feature_type)} 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+SQLITE3_1_DEF APC_RAW   sqlite3_update_key_columns   ""   sqlite3_drop_table           YES   sqlite3_truncate_table       NO   sqlite3_table_writer_mode    INHERIT_FROM_WRITER   DATETIME                     varchar(20)   TIMESTAMP                    integer   BUSID                        integer   LATITUDE                     float   LONGITUDE                    float   ALT                          float   DATE                         varchar(20)   TIME                         varchar(20)   BUSDAY                       integer   TYPE                         varchar(5)

@@ -1,0 +1,95 @@
+2013-02-27 10:26:04|   0.1|  0.1|INFORM|Feature Manipulation Engine 2012 SP2 (20120417 - Build 12238 - WIN64)
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|FME ESRI Edition (node locked-crc)
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|Serial Number: SAF000971
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|Permanent License.
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|Machine host name is: VTCW0105
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|START - ProcessID: 7964, peak process memory usage: 31496 kB, current process memory usage: 31412 kB
+2013-02-27 10:26:04|   0.1|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:\AndrewRoss\Work\AR_Whistler\FME\wb-xlate-1361989564558_5128' `LOG_STANDARDOUT' `YES' `LogCount' `C:\Users\aross\AppData\Local\Temp\wb-xlate-counts-1361989564562_5128'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Shared directories for formats are : C:\Program Files\FME\datasources;G:\BusinessIntelligence\Data\Resource\FME\Formats;C:\AndrewRoss\FME\Formats
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Shared directories for transformers are : F:\My Documents\FME\Transformers;C:\Program Files\FME\transformers;G:\BusinessIntelligence\Data\Resource\FME\Transformers;C:\AndrewRoss\FME\Transformers;C:\Users\aross\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Shared directories for coordinate systems are : G:\BusinessIntelligence\Data\Resource\FME\CoordinateSystems;C:\AndrewRoss\FME\CoordinateSystems
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Shared directories for coordinate system exceptions are : G:\BusinessIntelligence\Data\Resource\FME\CoordinateSystemExceptions;C:\AndrewRoss\FME\CoordinateSystemExceptions
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Shared directories for transformer categories are : G:\BusinessIntelligence\Data\Resource\FME\TransformerCategories;C:\AndrewRoss\FME\TransformerCategories
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `NULL_SOURCE'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `FILEGDB_1'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `FILEGDB_1_DEF'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Reader type is `NULL'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Writer type is `FILEGDB'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Geometry Handling Mode is `Enhanced' 
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Current working directory is `C:\AndrewRoss\Work\AR_Whistler\FME'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Temporary directory is `C:\Users\aross\AppData\Local\Temp'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\AndrewRoss\Work\AR_Whistler\FME/'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'apcGfiTimeline.fmw'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2012 SP2'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|System Status: 80656MB of disk space available in the FME temporary directory (C:\Users\aross\AppData\Local\Temp\)
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|System Status: 8388429MB of virtual memory available
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Operating System: Microsoft Windows 7 x64 Service Pack 1 (Build 7601)
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Platform: WIN64
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Locale: en_CA
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Code Page: 1252  (ANSI - Latin I)
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Process limit is 8150 MB (out of 8150 MB physical memory and 8388607 MB address space)
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 4890 MB of memory or 8388007 MB of address space
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 3667 MB of memory and 6291005 MB of address space
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `FILEGDB'
+2013-02-27 10:26:05|   0.1|  0.0|INFORM|Loaded module 'FILEGDB' from file 'C:\Program Files\FME\plugins/FILEGDB.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'FILEGDB' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Loaded module 'NULL' from file 'C:\Program Files\FME\plugins/NULL.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'FILEGDB' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'FILEGDB' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Loaded module 'QueryFactory' from file 'C:\Program Files\FME\plugins/QueryFactory.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'QueryFactory' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'QueryFactory' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Emptying factory pipeline
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `SQLITE3'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Loaded module 'SQLITE3' from file 'C:\Program Files\FME\plugins/SQLITE3.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'SQLITE3' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|APC(QueryFactory): Performing query against SQLITE3 dataset `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|SQLite 3 Reader: Opening `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db' for read operation
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|Loaded module 'EvaluateExpression_func' from file 'C:\Program Files\FME\plugins/EvaluateExpression_func.dll'
+2013-02-27 10:26:05|   0.2|  0.0|INFORM|FME API version of module 'EvaluateExpression_func' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.3|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `SQLITE3'
+2013-02-27 10:26:05|   0.3|  0.0|INFORM|FME API version of module 'SQLITE3' matches current internal version (3.7 20111219)
+2013-02-27 10:26:05|   0.3|  0.0|INFORM|GFI(QueryFactory): Performing query against SQLITE3 dataset `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db'
+2013-02-27 10:26:05|   0.3|  0.0|INFORM|SQLite 3 Reader: Opening `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db' for read operation
+2013-02-27 10:26:09|   4.0|  3.7|INFORM|SQLite 3 Reader: Database read complete.  Retrieved 19999 feature(s)
+2013-02-27 10:26:28|  22.7| 18.6|INFORM|SQLite 3 Reader: Database read complete.  Retrieved 106824 feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |APC_Creator(CreationFactory): Created 1 features
+2013-02-27 10:26:28|  22.7|  0.0|INFORM|SQLite 3 Reader: Closing `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db' . Read operation complete
+2013-02-27 10:26:28|  22.7|  0.0|STATS |APC_RESULT Feature Counter -1 5(TeeFactory): Cloned 106824 input feature(s) into 106824 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer_2(TestFactory): Tested 106824 input feature(s) -- 0 feature(s) passed and 106824 feature(s) failed
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer_2_POINT Feature Counter -1 7(TeeFactory): Cloned 106824 input feature(s) into 106824 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |GFI_Creator(CreationFactory): Created 1 features
+2013-02-27 10:26:28|  22.7|  0.0|INFORM|SQLite 3 Reader: Closing `C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db' . Read operation complete
+2013-02-27 10:26:28|  22.7|  0.0|STATS |GFI_RESULT Feature Counter -1 3(TeeFactory): Cloned 19999 input feature(s) into 19999 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer(TestFactory): Tested 19999 input feature(s) -- 0 feature(s) passed and 19999 feature(s) failed
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer_POINT Feature Counter -1 9(TeeFactory): Cloned 19999 input feature(s) into 19999 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer_2_POINT -> apc_timestamp Correlator(TeeFactory): Cloned 106824 input feature(s) into 106824 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |2DPointReplacer_POINT -> gfi_timestamp Correlator(TeeFactory): Cloned 19999 input feature(s) into 19999 output feature(s)
+2013-02-27 10:26:28|  22.7|  0.0|STATS |Final Output Feature Type Router(TestFactory): Tested 126823 input feature(s) -- 126823 feature(s) passed and 0 feature(s) failed
+2013-02-27 10:26:28|  22.7|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2013-02-27 10:26:29|  23.6|  0.9|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|STATS |                            Features Read Summary
+2013-02-27 10:26:29|  23.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|STATS |==============================================================================
+2013-02-27 10:26:29|  23.6|  0.0|STATS |Total Features Read                                                          0
+2013-02-27 10:26:29|  23.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|STATS |                           Features Written Summary
+2013-02-27 10:26:29|  23.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|STATS |apc_timestamp                                                           106824
+2013-02-27 10:26:29|  23.6|  0.0|STATS |gfi_timestamp                                                            19999
+2013-02-27 10:26:29|  23.6|  0.0|STATS |==============================================================================
+2013-02-27 10:26:29|  23.6|  0.0|STATS |Total Features Written                                                  126823
+2013-02-27 10:26:29|  23.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2013-02-27 10:26:29|  23.6|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (126823 feature(s) output)
+2013-02-27 10:26:29|  23.6|  0.0|INFORM|FME Session Duration: 24.3 seconds. (CPU: 20.8s user, 2.7s system)
+2013-02-27 10:26:29|  23.6|  0.0|INFORM|END - ProcessID: 7964, peak process memory usage: 88200 kB, current process memory usage: 46472 kB

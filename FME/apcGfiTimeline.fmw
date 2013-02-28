@@ -1,0 +1,675 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Windows command-line to run this workspace:
+#    
+#    
+#    fme.exe apcGfiTimeline.fmw
+#          --DestDataset_FILEGDB C:\AndrewRoss\Work\AR_Whistler\Data\tmp.gdb
+#    
+#    
+#! LAST_SAVE_BUILD="FME(R) 2012 SP2 (20120417 - Build 12238 - WIN64)"
+#! MAX_LOG_FEATURES="200"
+#! SOURCE="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! END_TCL=""
+#! DESTINATION="NONE"
+#! SHOW_BOOKMARKS="true"
+#! GRID_VISIBLE="false"
+#! SHOW_ANNOTATIONS="true"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! END_PYTHON=""
+#! CATEGORY=""
+#! REQUIREMENTS_KEYWORD=""
+#! GRID_HEIGHT="50"
+#! FME_REPROJECTION_ENGINE="FME"
+#! FME_BUILD_NUM="12238"
+#! SHOW_INFO_NODES="true"
+#! BEGIN_PYTHON=""
+#! DESCRIPTION=""
+#! GRID_SNAPTO="false"
+#! GRID_WIDTH="50"
+#! BEGIN_TCL=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! LOG_FILE=""
+#! HISTORY=""
+#! VIEW_POSITION="0 0"
+#! SOURCE_ROUTING_FILE=""
+#! ZOOM_SCALE="100"
+#! PASSWORD=""
+#! VIEW_PAGE_BREAKS="false"
+#! WORKSPACE_VERSION="1"
+#! DESTINATION_ROUTING_FILE=""
+#! LAST_SAVE_DATE="2013-02-27T12:15:29"
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! TITLE=""
+#! USAGE=""
+#! IGNORE_READER_FAILURE="No"
+#! REQUIREMENTS=""
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! REDIRECT_TERMINATORS="NONE"
+#! ATTR_TYPE_ENCODING="SDF"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="FILEGDB"
+#! DATASET="$(DestDataset_FILEGDB)"
+#! KEYWORD="FILEGDB_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="64"
+#! ATTR_CASE="ANYFIRSTNONNUMERIC"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="filegdb_type {FME_GEN_GEOMETRY}"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_type text(50) fme_text_string text(50) fme_feature_type text(50) fme_basename text(50) fme_geometry fme_char(50) fme_sweep_angle double fme_rotation double fme_secondary_axis double fme_fill_color text(50) fme_dataset text(50) fme_primary_axis double fme_start_angle double fme_text_size double fme_color text(50)"
+#! DEFLINE_PARMS="&quot;GUI CHOICE filegdb_drop_table YES%NO Drop Existing Table&quot; NO &quot;GUI CHOICE filegdb_truncate_table YES%NO Truncate Existing Table&quot; NO &quot;GUI TEXT filegdb_object_id_field Object ID Field&quot; OBJECTID &quot;GUI TEXT filegdb_object_id_alias Object ID Alias&quot; OBJECTID &quot;GUI TEXT filegdb_shape_field Shape Field&quot; SHAPE &quot;GUI TEXT filegdb_shape_alias Shape Alias&quot; SHAPE &quot;GUI TEXT filegdb_config_keyword Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL FLOAT filegdb_xy_tolerance XY Tolerance&quot; &quot;&quot; &quot;GUI FLOAT filegdb_z_tolerance Z Tolerance&quot; 0.001 "
+#! ATTR_INDEX_TYPES="indexed"
+#! ATTR_NAME_INVALID_CHARS="\\/&quot;:?*&lt;&gt;|[%# &apos;&amp;+-].^\{\}"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="12238"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_DIRECTORY=""
+#! FANOUT_PREFIX=""
+#! />
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="text(2048)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="blob"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_time"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int32"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_int16"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="single"
+#! FME_TYPE="fme_real32"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="double"
+#! FME_TYPE="fme_real64"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="objectid"
+#! FME_TYPE="fme_int32"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="guid(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="globalid(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="double(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="FILEGDB"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_area"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_line"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_multipoint"
+#! FME_TYPE="fme_point"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_point"
+#! FME_TYPE="fme_text"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_arc"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_no_geom"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_raster"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_surface"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polyline"
+#! FME_TYPE="fme_solid"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_polygon"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="geodb_no_geom"
+#! FME_TYPE="fme_collection"
+#! FORMAT="FILEGDB"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="apc_timestamp"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="6"
+#! FEAT_GEOMTYPE="geodb_point"
+#! POSITION="2009 -368"
+#! ORDER="8"
+#! COLLAPSED="true"
+#! KEYWORD="FILEGDB_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="LONGITUDE" ATTR_TYPE="double"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ALT" ATTR_TYPE="double"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATE" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIME" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="DATETIME" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUSDAY" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUSID" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="KEYID" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LATITUDE" ATTR_TYPE="double"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_truncate_table" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_object_id_alias" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_shape_field" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_config_keyword" PARM_VALUE="DEFAULTS"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_object_id_field" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_xy_tolerance" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_shape_alias" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_z_tolerance" PARM_VALUE="0.001"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="gfi_timestamp"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="8"
+#! FEAT_GEOMTYPE="geodb_point"
+#! POSITION="1941 -775"
+#! ORDER="9"
+#! COLLAPSED="true"
+#! KEYWORD="FILEGDB_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="DES" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TS" ATTR_TYPE="text(20)"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="LOC_N" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AMT" ATTR_TYPE="double"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="N" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TYPE" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUSDAY" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQ" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="TIMESTAMP" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="BUS" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="ROUTE" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQPPD" ATTR_TYPE="int"/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="SEQTR" ATTR_TYPE="int"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_truncate_table" PARM_VALUE="NO"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_object_id_alias" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_shape_field" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_config_keyword" PARM_VALUE="DEFAULTS"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_object_id_field" PARM_VALUE="OBJECTID"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_xy_tolerance" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_drop_table" PARM_VALUE="YES"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_shape_alias" PARM_VALUE="SHAPE"/>
+#! <DEFLINE_PARM PARM_NAME="filegdb_z_tolerance" PARM_VALUE="0.001"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DEST_GEODATABASE DestDataset_FILEGDB File Geodatabase|*.gdb Destination Geodatabase:"
+#! DEFAULT_VALUE="C:\AndrewRoss\Work\AR_Whistler\Data\tmp.gdb"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="0"
+#! TYPE="SQLCreator"
+#! VERSION="2"
+#! POSITION="380 -345"
+#! ORDER="4"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="RESULT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="KEYID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="SQLITE3"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="APC"/>
+#! <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="C:&lt;backslash&gt;AndrewRoss&lt;backslash&gt;Work&lt;backslash&gt;AR_Whistler&lt;backslash&gt;Data&lt;backslash&gt;whistlerData02.db"/>
+#! <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;*&lt;space&gt;from&lt;space&gt;V_APCGOOD"/>
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="ALT,BUSDAY,BUSID,DATE,DATETIME,KEYID,LATITUDE,LONGITUDE,TIME,TIMESTAMP,TYPE"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="1"
+#! TYPE="SQLCreator"
+#! VERSION="2"
+#! POSITION="393 -733"
+#! ORDER="5"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="RESULT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DES" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LOC_N" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="N" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQ" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQPPD" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQTR" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="AMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="SQLITE3"/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GFI"/>
+#! <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="C:&lt;backslash&gt;AndrewRoss&lt;backslash&gt;Work&lt;backslash&gt;AR_Whistler&lt;backslash&gt;Data&lt;backslash&gt;whistlerData02.db"/>
+#! <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="select&lt;space&gt;*&lt;space&gt;from&lt;space&gt;V_GFI_APCBUS"/>
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="BUS,BUSDAY,DES,ID,LOC_N,N,ROUTE,SEQ,SEQPPD,SEQTR,TIMESTAMP,TS,TYPE,AMT"/>
+#! <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="2DPointReplacer"
+#! VERSION="1"
+#! POSITION="1189 -670"
+#! ORDER="6"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="POINT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DES" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LOC_N" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="N" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="ROUTE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQ" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQPPD" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="SEQTR" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TS" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="AMT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="YVALATTR" PARM_VALUE="(@Value(BUS)*400)+50"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="2DPointReplacer"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XVALATTR" PARM_VALUE="@Value(TIMESTAMP)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="4"
+#! TYPE="2DPointReplacer"
+#! VERSION="1"
+#! POSITION="1261 -314"
+#! ORDER="7"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="POINT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="ALT" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSDAY" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="BUSID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="DATETIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="KEYID" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LATITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="LONGITUDE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIME" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TIMESTAMP" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_ATTR ATTR_NAME="TYPE" IS_USER_CREATED="false" FEAT_INDEX="0"/>
+#! <XFORM_PARM PARM_NAME="YVALATTR" PARM_VALUE="(@Value(BUSID)*400)"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="2DPointReplacer_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XVALATTR" PARM_VALUE="@Value(TIMESTAMP)"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="3"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="5"
+#! SOURCE_NODE="0"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="7"
+#! SOURCE_NODE="4"
+#! TARGET_NODE="6"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="9"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="8"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE DestDataset_FILEGDB_1,FILEGDB_OUT_OVERWRITE_GEODB_FILEGDB_1
+
+DEFAULT_MACRO DestDataset_FILEGDB C:\AndrewRoss\Work\AR_Whistler\Data\tmp.gdb
+GUI DEST_GEODATABASE DestDataset_FILEGDB File Geodatabase|*.gdb Destination Geodatabase:
+INCLUDE TCL
+proc __FME_ExpandMacros {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\([^()$]*\)}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::FME_MacroValues([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandMacros $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_ExpandEnvVars {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\{[^\{\}$]*\}}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::env([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandEnvVars $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_EvalAndEncodeMacro {macroName} {
+   set macroVal {}
+   catch { set macroVal [__FME_ExpandMacros $::FME_MacroValues($macroName)] }
+   catch { set macroVal [__FME_ExpandEnvVars $macroVal] }
+   return [FME_EncodeText $macroVal]
+}
+END_INCLUDE
+INCLUDE [	puts "MACRO DestDataset_FILEGDB__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_FILEGDB]" ;   ]
+
+INCLUDE [ if {{$(DestDataset_FILEGDB)} == {}} { puts_real {Parameter 'DestDataset_FILEGDB' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE NULL
+READER_KEYWORD NULL_SOURCE
+NULL_SOURCE_DATASET null
+WRITER_TYPE FILEGDB
+WRITER_KEYWORD FILEGDB_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "FILEGDB_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER FILEGDB FILEGDB_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_FILEGDB_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER FILEGDB FILEGDB_1
+DEFAULT_MACRO DestDataset_FILEGDB_1 $(DestDataset_FILEGDB)
+GUI DEST_GEODATABASE DestDataset_FILEGDB_1 File Geodatabase|*.gdb Destination Geodatabase:
+FILEGDB_1_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+DEFAULT_MACRO FILEGDB_OUT_OVERWRITE_GEODB_FILEGDB_1 NO
+FILEGDB_1_OVERWRITE_GEODB "$(FILEGDB_OUT_OVERWRITE_GEODB_FILEGDB_1)"
+GUI CHOICE FILEGDB_OUT_OVERWRITE_GEODB_FILEGDB_1 YES%NO Overwrite Geodatabase:
+FILEGDB_1_DATASET "$(DestDataset_FILEGDB_1)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)apcGfiTimeline.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_FILEGDB_1 FILEGDB_1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME apcGfiTimeline
+MACRO FME_VIEWER_APP fmeview
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO APC_DIRECTIVES 
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME APC_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME APC    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>*<space>from<space>V_APCGOOD    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE         	SQLITE3    READER_DATASET      	"C:<backslash>AndrewRoss<backslash>Work<backslash>AR_Whistler<backslash>Data<backslash>whistlerData02.db"    READER_PARAMS        $(APC_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE APC_RESULT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME 2DPointReplacer_2    INPUT  FEATURE_TYPE APC_RESULT    TEST &fme_type = fme_text    OUTPUT PASSED FEATURE_TYPE 2DPointReplacer_2_POINT         @XValue("@Value(TIMESTAMP)",RESET)         @YValue("@EvaluateExpression(FLOAT,<openparen><at>Value<openparen>BUSID<closeparen>*400<closeparen>,2DPointReplacer_2)")         @Dimension(2)    OUTPUT FAILED FEATURE_TYPE 2DPointReplacer_2_POINT         @XValue("@Value(TIMESTAMP)",RESET)         @YValue("@EvaluateExpression(FLOAT,<openparen><at>Value<openparen>BUSID<closeparen>*400<closeparen>,2DPointReplacer_2)")         @Dimension(2)         @GeometryType(fme_point)
+
+# -------------------------------------------------------------------------
+MACRO GFI_DIRECTIVES 
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME GFI_Creator    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * QueryFactory    FACTORY_NAME GFI    INPUT FEATURE_TYPE _____CREATED______    QUERY_SQL            select<space>*<space>from<space>V_GFI_APCBUS    COMBINE_ATTRIBUTES   RESULT_ONLY    COMBINE_GEOMETRY     RESULT_ONLY    READER_TYPE         	SQLITE3    READER_DATASET      	"C:<backslash>AndrewRoss<backslash>Work<backslash>AR_Whistler<backslash>Data<backslash>whistlerData02.db"    READER_PARAMS        $(GFI_DIRECTIVES)    OUTPUT RESULT FEATURE_TYPE GFI_RESULT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory    FACTORY_NAME 2DPointReplacer    INPUT  FEATURE_TYPE GFI_RESULT    TEST &fme_type = fme_text    OUTPUT PASSED FEATURE_TYPE 2DPointReplacer_POINT         @XValue("@Value(TIMESTAMP)",RESET)         @YValue("@EvaluateExpression(FLOAT,<openparen><at>Value<openparen>BUS<closeparen>*400<closeparen>+50,2DPointReplacer)")         @Dimension(2)    OUTPUT FAILED FEATURE_TYPE 2DPointReplacer_POINT         @XValue("@Value(TIMESTAMP)",RESET)         @YValue("@EvaluateExpression(FLOAT,<openparen><at>Value<openparen>BUS<closeparen>*400<closeparen>+50,2DPointReplacer)")         @Dimension(2)         @GeometryType(fme_point)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "2DPointReplacer_2_POINT -> apc_timestamp Correlator"    INPUT FEATURE_TYPE 2DPointReplacer_2_POINT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Transform(FME_GENERIC,FILEGDB)       @SupplyAttributes(__wb_out_feat_type__,apc_timestamp)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "2DPointReplacer_POINT -> gfi_timestamp Correlator"    INPUT FEATURE_TYPE 2DPointReplacer_POINT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Transform(FME_GENERIC,FILEGDB)       @SupplyAttributes(__wb_out_feat_type__,gfi_timestamp)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 {@Value(fme_template_feature_type)} 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+FILEGDB_1_DEF gfi_timestamp   filegdb_type                 geodb_point   filegdb_truncate_table       NO   filegdb_object_id_alias      OBJECTID   filegdb_shape_field          SHAPE   filegdb_config_keyword       DEFAULTS   filegdb_object_id_field      OBJECTID   filegdb_xy_tolerance         ""   filegdb_drop_table           YES   filegdb_shape_alias          SHAPE   filegdb_z_tolerance          0.001   DES                          int   TS                           text(20)   LOC_N                        int   AMT                          double   N                            int   TYPE                         int   BUSDAY                       int   ID                           int   SEQ                          int   TIMESTAMP                    int   BUS                          int   ROUTE                        int   SEQPPD                       int   SEQTR                        int
+# -------------------------------------------------------------------------
+FILEGDB_1_DEF apc_timestamp   filegdb_type                 geodb_point   filegdb_truncate_table       NO   filegdb_object_id_alias      OBJECTID   filegdb_shape_field          SHAPE   filegdb_config_keyword       DEFAULTS   filegdb_object_id_field      OBJECTID   filegdb_xy_tolerance         ""   filegdb_drop_table           YES   filegdb_shape_alias          SHAPE   filegdb_z_tolerance          0.001   LONGITUDE                    double   ALT                          double   DATE                         text(20)   TIME                         text(20)   DATETIME                     text(20)   TYPE                         text(20)   BUSDAY                       int   BUSID                        int   KEYID                        text(20)   TIMESTAMP                    int   LATITUDE                     double

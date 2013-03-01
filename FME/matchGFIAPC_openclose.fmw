@@ -5,7 +5,7 @@
 #    Windows command-line to run this workspace:
 #    
 #    
-#    fme.exe matchGFI_3.fmw
+#    fme.exe matchGFIAPC_openclose.fmw
 #          --DestDataset_SQLITE3 C:\AndrewRoss\Work\AR_Whistler\Data\whistlerData02.db
 #    
 #    
@@ -42,7 +42,7 @@
 #! VIEW_PAGE_BREAKS="false"
 #! WORKSPACE_VERSION="1"
 #! DESTINATION_ROUTING_FILE=""
-#! LAST_SAVE_DATE="2013-02-27T15:35:41"
+#! LAST_SAVE_DATE="2013-02-28T13:37:52"
 #! FME_GEOMETRY_HANDLING="Enhanced"
 #! TITLE=""
 #! USAGE=""
@@ -285,7 +285,7 @@
 #! IDENTIFIER="19"
 #! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
 #! POSITION="2998 -756"
-#! ORDER="18"
+#! ORDER="16"
 #! COLLAPSED="false"
 #! KEYWORD="SQLITE3_1"
 #! ENABLED="true"
@@ -320,8 +320,8 @@
 #! IDENTIFIER="14"
 #! TYPE="SQLCreator"
 #! VERSION="2"
-#! POSITION="120 -444"
-#! ORDER="9"
+#! POSITION="100 -444"
+#! ORDER="8"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -354,8 +354,8 @@
 #! IDENTIFIER="35"
 #! TYPE="SQLCreator"
 #! VERSION="2"
-#! POSITION="154 -889"
-#! ORDER="10"
+#! POSITION="134 -889"
+#! ORDER="9"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -387,7 +387,7 @@
 #! TYPE="Tester"
 #! VERSION="1"
 #! POSITION="728 -779"
-#! ORDER="11"
+#! ORDER="10"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -432,7 +432,7 @@
 #! TYPE="AttributeCreator"
 #! VERSION="2"
 #! POSITION="744 -389"
-#! ORDER="12"
+#! ORDER="11"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -461,7 +461,7 @@
 #! TYPE="AttributeCreator"
 #! VERSION="2"
 #! POSITION="1297 -782"
-#! ORDER="13"
+#! ORDER="12"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -488,7 +488,7 @@
 #! TYPE="Sorter"
 #! VERSION="2"
 #! POSITION="1822 -782"
-#! ORDER="14"
+#! ORDER="13"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -515,7 +515,7 @@
 #! TYPE="Sorter"
 #! VERSION="2"
 #! POSITION="1312 -408"
-#! ORDER="15"
+#! ORDER="14"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -544,7 +544,7 @@
 #! TYPE="PythonCaller"
 #! VERSION="3"
 #! POSITION="2352 -402"
-#! ORDER="16"
+#! ORDER="15"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
@@ -580,31 +580,6 @@
 #! <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="Whistler.FMEmatchAPC"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE=""/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#! IDENTIFIER="17"
-#! TYPE="Inspector"
-#! VERSION="2"
-#! POSITION="3124 -485"
-#! ORDER="17"
-#! PARMS_EDITED="false"
-#! ENABLED="true"
-#! >
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_OUTPUT"/>
-#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
-#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
-#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="THINNER_RATE" PARM_VALUE="1"/>
-#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -666,15 +641,6 @@
 #! IDENTIFIER="16"
 #! SOURCE_NODE="11"
 #! TARGET_NODE="13"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="18"
-#! SOURCE_NODE="13"
-#! TARGET_NODE="17"
 #! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
@@ -810,7 +776,7 @@ SQLITE3_1_DATASET "$(DestDataset_SQLITE3_1)"
 #! END_DEST_HEADER
 #! END_HEADER
 
-LOG_FILENAME "$(FME_MF_DIR)matchGFI_3.log"
+LOG_FILENAME "$(FME_MF_DIR)matchGFIAPC_openclose.log"
 LOG_APPEND NO
 LOG_MAX_FEATURES 200
 LOG_MAX_RECORDED_FEATURES 200
@@ -825,7 +791,7 @@ MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
 
-MACRO WORKSPACE_NAME matchGFI_3
+MACRO WORKSPACE_NAME matchGFIAPC_openclose
 MACRO FME_VIEWER_APP fmeview
 # -------------------------------------------------------------------------
 
@@ -841,9 +807,9 @@ FACTORY_DEF * QueryFactory    FACTORY_NAME GFI    INPUT FEATURE_TYPE _____CREATE
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc 1370f714_ddf9_430c_babd_33c1692b1b326_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+Tcl2 proc 1370f714_ddf9_430c_babd_33c1692b1b3218_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE GFI_RESULT    OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT         "@Tcl2( 1370f714_ddf9_430c_babd_33c1692b1b326_attrSetter {(_SOURCE,GFI)} )"
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator    INPUT  FEATURE_TYPE GFI_RESULT    OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT         "@Tcl2( 1370f714_ddf9_430c_babd_33c1692b1b3218_attrSetter {(_SOURCE,GFI)} )"
 
 # -------------------------------------------------------------------------
 
@@ -860,9 +826,9 @@ FACTORY_DEF * QueryFactory    FACTORY_NAME APC    INPUT FEATURE_TYPE _____CREATE
 FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE APC_RESULT    TEST "@Value(TYPE)" IN "O,C"    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE Tester_PASSED
 # -------------------------------------------------------------------------
 
-Tcl2 proc a5eb998d_4656_4685_8aed_aaac0973b4d85_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator_2}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
+Tcl2 proc a5eb998d_4656_4685_8aed_aaac0973b4d817_attrSetter { attrList } {     set attrList [string trim $attrList {()}];     set attrs [split $attrList {,} ];     foreach {attrName attrVal} $attrs {         if { [string match {*<at>*} $attrName] == 1 } {             set attrName [FME_Execute EvaluateExpression {STRING} $attrName {AttributeCreator_2}];         } else {             set attrName [FME_DecodeText $attrName];         };         if { [string match {*<at>*} $attrVal] == 1 } {             set attrVal [FME_Execute EvaluateExpression {STRING} $attrVal {AttributeCreator_2}];         } else {             set attrVal [FME_DecodeText $attrVal];         };         FME_SetAttribute $attrName $attrVal;     }; };
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE Tester_PASSED    OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT         "@Tcl2( a5eb998d_4656_4685_8aed_aaac0973b4d85_attrSetter {(_SOURCE,APC)} )"
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeCreator_2    INPUT  FEATURE_TYPE Tester_PASSED    OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT         "@Tcl2( a5eb998d_4656_4685_8aed_aaac0973b4d817_attrSetter {(_SOURCE,APC)} )"
 
 # -------------------------------------------------------------------------
 
@@ -875,51 +841,9 @@ FME_PYTHON_PATH "$(FME_MF_DIR)"
 
 FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE Sorter_SORTED    INPUT  FEATURE_TYPE Sorter_2_SORTED    SYMBOL_NAME Whistler.FMEmatchAPC    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Splitter"   INPUT FEATURE_TYPE PythonCaller_OUTPUT   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_0   OUTPUT FEATURE_TYPE PythonCaller_OUTPUT_1
 # -------------------------------------------------------------------------
 
-# Set the directive to add all the meta-attributes to the features.
-# We do this so users see all possible information in the viewed
-# features.
-
-READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [         if { [string length {}] > 0 } {             set catter "" ;             set comma "" ;             foreach attr {} {                 set catter "$catter$comma@Value(\"$attr\")" ;                 set comma ",_," ;             } ;             puts "MACRO CATMAC _@Concatenate($catter)" ;         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {PythonCaller_OUTPUT} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
-# Make the temporary directory that the FFS files will live in.
-FACTORY_DEF * CreationFactory      FACTORY_NAME PythonCaller_OUTPUT_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
-FACTORY_DEF * TeeFactory    FACTORY_NAME PythonCaller_OUTPUT_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
-# Send raster, point cloud and vector features down different paths to prepare
-# them for viewing
-
-FACTORY_DEF * TestFactory    FACTORY_NAME PythonCaller_OUTPUT_FeatureDirector    INPUT  FEATURE_TYPE PythonCaller_OUTPUT_0    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE PythonCaller_OUTPUT___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE PythonCaller_OUTPUT___RasterFeatures___
-FACTORY_DEF * TestFactory    FACTORY_NAME PythonCaller_OUTPUT___FeatureDirector1    INPUT FEATURE_TYPE PythonCaller_OUTPUT___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE PythonCaller_OUTPUT___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE PythonCaller_OUTPUT___PointCloudFeatures___
-# Vector features simply may get their colors overridden
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME PythonCaller_OUTPUT_VectorSetterUpper    INPUT FEATURE_TYPE PythonCaller_OUTPUT___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
-# Point Cloud Features Might Need to be thinned
-
-# Note that we don't call the ThinPointCloud function directly, but rather
-# do it through TCL. This should allow this transformer to be used with a
-# Desktop license, even though ThinPointCloud requires Professional.
-
-Tcl2 proc a4676617_fca8_4719_9fb6_c655a3ef71145_thinPointCloud {} {    FME_Execute ThinPointCloud NO_THINNING 1; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME PythonCaller_OUTPUT___PointCloudThinner    INPUT FEATURE_TYPE PythonCaller_OUTPUT___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("a4676617_fca8_4719_9fb6_c655a3ef71145_thinPointCloud")
-Tcl2 proc a4676617_fca8_4719_9fb6_c655a3ef71145_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
-FACTORY_DEF * TeeFactory    FACTORY_NAME PythonCaller_OUTPUT_RasterSetterUpper    INPUT FEATURE_TYPE PythonCaller_OUTPUT___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("a4676617_fca8_4719_9fb6_c655a3ef71145_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-# a4676617_fca8_4719_9fb6_c655a3ef71145_VIS_FEAT_TYPE changes the feature types
-# of the features being visualized.
-
-DEFAULT_MACRO a4676617_fca8_4719_9fb6_c655a3ef71145_VIS_FEAT_TYPE PythonCaller_OUTPUT$(CATMAC)
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-FACTORY_DEF * RecorderFactory    FACTORY_NAME PythonCaller_OUTPUT_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(a4676617_fca8_4719_9fb6_c655a3ef71145_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    MODE RECORD_PASS_THROUGH
-
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_OUTPUT_1 -> GFImatch Correlator"    INPUT FEATURE_TYPE PythonCaller_OUTPUT_1    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Transform(FME_GENERIC,SQLITE3)       @SupplyAttributes(__wb_out_feat_type__,GFImatch)
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PythonCaller_OUTPUT -> GFImatch Correlator"    INPUT FEATURE_TYPE PythonCaller_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       @Transform(FME_GENERIC,SQLITE3)       @SupplyAttributes(__wb_out_feat_type__,GFImatch)
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 {@Value(fme_template_feature_type)} 818060 818061 fme_warn")
@@ -927,9 +851,5 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
-# -------------------------------------------------------------------------
-
-FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmeview\042 /ownffs $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; foreach {fileName} $files { lappend filesNoExt [string trimright $fileName {.ffs}] };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmeview\042 /ownffs {$(WORKSPACE_TEMP_DIR)} $filesNoExt & \175; }; }; ")
-FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
 # -------------------------------------------------------------------------
 SQLITE3_1_DEF GFImatch   sqlite3_update_key_columns   ""   sqlite3_drop_table           YES   sqlite3_truncate_table       NO   sqlite3_table_writer_mode    INHERIT_FROM_WRITER   _ID                          integer   _APCMATCHID                  integer

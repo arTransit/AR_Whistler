@@ -1,9 +1,11 @@
 import fmeobjects
+import bisect
 
 """ Global Variables
 """
 # NEEDED_ATTRIBUTES=['APC{0}.LON','APC{0}.LAT','APC{0}.TIMESTAMP','APC{1}.LON','APC{1}.LAT','APC{1}.TIMESTAMP']
 LOGIT=0
+MAXTIMEDIFF=100 # in seconds
 
 '''
 class FMEInterpolatePoints(object):
@@ -154,5 +156,103 @@ class FMEInterpolatePoints2(object):
         g.setAttribute( 'POINTCALC', 0)
         return g
 
+        
+        
+class FMEInterpolatePoints3(object):
+    def __init__(self):
+        self.apcData = {}
+        self.apcTimestamps = {}
+        self.gfiData = []
+        #self.metaArray = {'GFI':self.gfiData, 'APC':self.apcData}
+        
+        self.logger = fmeobjects.FMELogFile()
+
+    def logging(self, m):
+        if LOGIT: self.logger.logMessageString( str(m) )
+
+        
+    def input(self,f):
+        if f.getAttribute('_SOURCE') == 'GFI':
+            self.gfiData.append( f )
+        elif f.getAttribute('_SOURCE') == 'APC':
+            busID = int( f.getAttribute('BUSID') )
+            if busID not in self.apcData.keys(): 
+                self.apcData[ busID ] = []
+                self.apcTimestamps[ busID ] = []
+            self.apcData[ busID ].append( f )
+            self.apcTimestamps[ busID ].append( int(f.getAttribute('TIMESTAMP')) )
+        else:
+            self.logging("FMEmatchAPC: Unknown feature.")
+
+            
+
+    def close(self):
+        self.logging("FMEInterpolatePoints2: Processing...")
+        self.logging("FMEInterpolatePoints2: gfiData %s" % len(self.gfiData) )
+        self.logging("FMEInterpolatePoints2: apcData %s" % len(self.apcData) )
+        
+        for gfi in self.gfiData:
+            self.logging("\nFMEInterpolatePoints2: working on %s %s" % (
+                    gfi.getAttribute( 'BUS' ),gfi.getAttribute( 'TIMESTAMP' )))
+            
+            busID = int( gfi.getAttribute('BUS') )
+            timestamp = int( gfi.getAttribute( 'TIMESTAMP' ))
+            i = bisect.bisect_right( self.apcTimestamps[ busID ], timestamp )
+            
+            if i == 0:  # time is before first APC timestamp
+                self.pyoutput( self.nullFeature( gfi) )
+            elif timestamp == self.apcTimestamps[ busID ][ i -1 ]: 
+                self.pyoutput( self.copyCoordinates( gfi, i -1 , busID ))
+            elif i < len( self.apcTimestamps[ busID ]): 
+                self.pyoutput( self.interpolateCoordinates( gfi, i, busID ))
+            else:
+                self.pyoutput( self.nullFeature( gfi) )
+
+                
+    def interpolateCoordinates( self, g, i, busID ):
+        self.logging("makePointFeature: making new point for %s %s" % (
+                g.getAttribute( 'BUS' ),g.getAttribute( 'TIMESTAMP' )))
+
+        x1,y1 = self.apcData[busID][i-1].getCoordinate(0)
+        x2,y2 = self.apcData[busID][i].getCoordinate(0)
+        timestamp1 = float(self.apcData[busID][i-1].getAttribute( 'TIMESTAMP' ))
+        timestamp2 = float(self.apcData[busID][i].getAttribute( 'TIMESTAMP' ))
+        timestamp0 = float(g.getAttribute( 'TIMESTAMP' ))
+        
+        if abs( timestamp0 - timestamp2) > MAXTIMEDIFF or abs( timestamp0 - timestamp1) > MAXTIMEDIFF:
+            g.setAttribute( '_STATUS', 0)
+        else:
+            timeRatio = (timestamp0 - timestamp1) / (timestamp2 - timestamp1)
+            x = (timeRatio * (x2 - x1)) + x1
+            y = (timeRatio * (y2 - y1)) + y1
+            
+            g.setAttribute( 'LATITUDE', y )
+            g.setAttribute( 'LONGITUDE',x )
+            g.setAttribute( 'POINTCALC', 1)
+            g.setAttribute( 'TIMEDIFF', (timestamp2 - timestamp1)/2.0 )
+            g.setAttribute( '_STATUS', 1)        
+        return g
+
+
+    def nullFeature( self, g ):
+        self.logging("nullFeature: no point for %s %s" % (
+                g.getAttribute( 'BUS' ),g.getAttribute( 'TIMESTAMP' )))
+        g.setAttribute( '_STATUS', 0)
+        return g
+        
+
+    def copyCoordinates( self, g, i, busID ):
+        self.logging("copyCoordinates: copying point for %s %s" % (
+                g.getAttribute( 'BUS' ),g.getAttribute( 'TIMESTAMP' )))
+        x,y = self.apcData[busID][i].getCoordinate(0)
+        g.setAttribute( 'LATITUDE', y )
+        g.setAttribute( 'LONGITUDE',x )
+        g.setAttribute( 'POINTCALC', 0)
+        g.setAttribute( 'TIMEDIFF', 0)
+        g.setAttribute( '_STATUS', 1)
+        return g
+        
+
+                
 
                 
